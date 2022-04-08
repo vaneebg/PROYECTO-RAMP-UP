@@ -1,11 +1,12 @@
 body{
-    background-image: url(/assets/thumb-1920-371656.jpg);
+    background-image: url("/assets/backgroung.jpg");
     background-repeat: no-repeat;
     background-size: cover; 
     width:100%;
     height:100%; 
     margin: 0;
 }
+/* modelos flexbox */
 .title-main{
   display:flex;
   flex-direction: column;
@@ -25,4 +26,17 @@ body{
   justify-content:center;
   align-items:flex-end;
 }
- 
+.portfolio, .contact{
+  display:flex;
+  justify-content: center;
+}
+/* Dimensionar las imágenes para iconos */
+.title-bio img{
+  width: 2em;
+  
+}
+.titles-2-3 img{
+  width: 2em;
+  
+}
+
