@@ -20,16 +20,15 @@ main{
 .title-main{
   display:flex;
   flex-direction: column;
- align-items: center;
- max-height: 20em;
+  align-items: center;
+ 
  
 
 }
 .title-bio{
   display:flex;
   justify-content: center;
-  align-items: center;
-  width:100%;
+ 
 
 }
 .titles-2-3{
@@ -41,10 +40,7 @@ main{
   justify-content:center;
   align-items:flex-end;
 }
-.portfolio, .contact{
-  display:flex;
-  justify-content: center;
-}
+
 /* Dimensionar las imágenes para iconos */
 .title-bio img, .titles-2-3 img{
   width: 2em;
@@ -54,9 +50,9 @@ main{
 /* Estilos para los encabezados */
 h1{
   
-  font-family: 'Hanalei Fill', cursive;
+font-family: 'Hanalei Fill', cursive;
   letter-spacing: 3px;
-  font-size: 4em;
+  font-size: 7em;
   font-weight: 900;
   letter-spacing: 0.2em;
   word-spacing: 0.2em;
@@ -68,7 +64,8 @@ h1{
   -webkit-linear-gradient:(rgb(255, 136, 0),rgb(236, 200, 165));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: brown; 
+  color: brown;
+  border: 1px solid black;
 }
 
 h2{
@@ -80,6 +77,8 @@ h2{
   text-shadow: 4px -4px black;
   -webkit-text-stroke: 2px rgb(230, 171, 117);
   -moz-text-stroke: 2px rgb(230, 171, 117);
+  
+  border: 1px solid black;
 
 
 }
@@ -87,7 +86,7 @@ h2{
 /* estilo a la zona del botón */
 button{
   all:unset;
-  padding: 1vw;
+  padding: 1px;
   border: 2px dashed white;
   border-radius: 30px;
  
@@ -101,7 +100,7 @@ a{
   font-weight: 900;
   letter-spacing: 3px;
   -webkit-text-stroke: 2px brown;
-  
+  -moz-text-stroke: 2px brown;
   cursor:url("/assets/guantelete.png"), pointer;
 }
 
