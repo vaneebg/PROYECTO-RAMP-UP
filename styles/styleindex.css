@@ -44,11 +44,6 @@ main{
   display:flex;
   justify-content:center;
   align-items:flex-end;
-  animation-name: saludo;
-  filter: opacity(0);
-  animation-duration: 5s;
-  animation-delay: 2s;
-  animation-fill-mode: forwards;
  
 }
 
@@ -145,7 +140,7 @@ a{
   animation-name: saludo;
   animation-duration: 7s;
   animation-delay: 3s;
-  animation-fill-mode: forwards;
+  animation-fill-mode:backwards;
 
 }
 .hello:before {
@@ -170,3 +165,72 @@ a{
   75%  {filter:opacity(0.8);}
   100% {filter:opacity(1);}
 } 
+.imageGroot{
+  animation-name: saludo;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+
+}
+.whereYouGo{
+  font-family:'Rubik Moonrocks', cursive;
+  font-size: 38px;
+  text-align: center;
+  line-height: 1em;
+  height: 2em;
+  width: 8em;
+  color: rgb(10, 36, 10);
+  -webkit-text-stroke: 1px rgb(39, 78, 39);
+  -moz-text-stroke: 1px rgb(39, 78, 39);
+  border-radius: 30px;
+  padding: 7px;
+  position: relative;
+  left:250px;
+  bottom: 540px;
+  font-family: 'Rubik Moonrocks', cursive;
+  background-color: white;
+  transform:rotate(-20deg);
+  filter: opacity(0);
+  animation-name: direction;
+  animation-fill-mode: backwards;
+  animation-duration: 5s;
+  animation-delay: 10s;
+  
+}
+.whereYouGo:before {
+  border: 25px solid white;
+  content: '';
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  position: absolute;
+  bottom: -35px;
+  left: 280px;
+  transform: rotate(-28deg);
+} 
+@keyframes direction {
+  0%   {filter: opacity(0);}
+  25%  {filter: opacity(0.3);}
+  50%  {filter: opacity(0.6);}
+  75%  {filter: opacity(0.8);}
+  100% {filter: opacity(1);}
+} 
+.title-bio{
+  animation-name:click1;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-delay: 16s;
+}
+.titles-2-3{
+  animation-name:click1;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-delay: 20s;
+}
+@keyframes click1 {
+  0%   {filter: opacity(0);}
+  25%  {filter: opacity(0.3);}
+  50%  {filter: opacity(0.6);}
+  75%  {filter: opacity(0.8);}
+  100% {visibility: initial;}
+}
