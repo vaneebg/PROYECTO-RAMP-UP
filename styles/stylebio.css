@@ -53,6 +53,7 @@
     
     .data-academic {
         background: #be5168;
+        text-align: center;
     }
     
     .data-personal {
@@ -114,6 +115,18 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+    
+    .content-personal,
+    .content-sport,
+    .content-gamer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .imag-content {
+        padding-right: 2em;
+    }
     /* estilo botones */
     
     .back,
@@ -150,19 +163,19 @@
         width: 14em;
     }
     
+    main button:hover {
+        background-color: #e4d99f;
+    }
+    
     button:hover {
         cursor: url("/assets/images/biography/iconattack.png"), pointer;
     }
     /* estilo cuerpo */
     
     .content-personal img {
-        position: relative;
         height: 7em;
-        width: 17em;
+        width: 13em;
         border-radius: 50px;
-        bottom: 7em;
-        left: 18em;
-        margin: 3px;
         /* esto de la posicion es al reves, si lo quieres subir parriba, coges abajo */
     }
     
@@ -170,14 +183,6 @@
         text-align: center;
         font-style: italic;
         font-weight: bold;
-    }
-    
-    .sport img {
-        position: relative;
-        left: 27em;
-        bottom: 7em;
-        height: 12em;
-        border-radius: 30px;
     }
     
     .iconbio {
@@ -188,4 +193,9 @@
         left: 55em;
         transform: rotate(29deg);
         margin: -10em;
+    }
+    /* boton function */
+    
+    .scroll {
+        display: none;
     }
