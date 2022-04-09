@@ -3,7 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Erica+One&display=swap');
 body {
-    background: radial-gradient(rgb(172, 172, 233), rgb(43, 43, 129));
+    background-color: #9abf88;
+    cursor: url("/assets/images/biography/cursorluffy.png"), pointer;
 }
 
 h1 {
@@ -19,6 +20,7 @@ h1 {
     -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
+    margin-top: 0;
 }
 
 img {
@@ -27,38 +29,44 @@ img {
 }
 
 .sport {
-    background-color: green;
+    background-color: #4e2472;
 }
 
 .anime {
-    background-color: crimson;
+    background-color: #65387d;
 }
 
 .gamer {
-    background-color: darkred;
+    background-color: #993767;
 }
 
 .origami {
-    background-color: deeppink;
+    background-color: #a34974;
 }
 
 .draw {
-    background-color: blue;
+    background-color: #9163b6;
 }
 
 .data-academic {
-    background-color: gray;
+    background: #be5168;
 }
 
 .data-personal {
-    background-color: cornflowerblue;
+    background-color: #7c9fb0;
 }
 
 
 /* flex box models */
 
+header {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 15em;
+}
+
 main {
-    background-image: url("/assets/images/biography/background2.jpeg");
+    background-color: #5698c4;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -69,10 +77,10 @@ main {
 .data-academic {
     display: flex;
     flex-direction: column;
+    align-content: space-around;
 }
 
 .hobbies {
-    background-color: aqua;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -81,10 +89,10 @@ main {
 }
 
 .typeshobbies {
-    background-color: blueviolet;
+    background-color: #e279a3;
     display: flex;
     flex-direction: column;
-    padding: 20px 0 20px 0;
+    padding: 20px 30px 20px 0;
 }
 
 .draw,
@@ -102,4 +110,34 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+
+/* estilo boton atras */
+
+.back,
+.back a {
+    all: unset;
+}
+
+.back img {
+    height: 2em;
+    width: 2em;
+    border-radius: 100px;
+    position: relative;
+    top: 10px;
+    right: 6px;
+}
+
+.back a {
+    border: 2px dashed rgb(18, 92, 18);
+    padding: 10px;
+    border-radius: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.back a:hover,
+.back a:active {
+    background-color: rgb(18, 92, 18);
+    color: white;
 }
