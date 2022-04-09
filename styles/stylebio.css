@@ -1,0 +1,66 @@
+img{
+    height:200px;
+    width:200px;
+}
+/* flex box models */
+body{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    height: 100%;
+}
+main{
+    background-color: yellow;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    padding:20px;
+
+}
+
+.data-personal{
+    background-color: cornflowerblue;
+}
+.hobbies{
+    background-color: aqua;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:20px;
+    flex-grow: 0.5;
+}
+.typeshobbies{
+    background-color: blueviolet;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-between;
+}
+.draw{
+    background-color: coral;
+}
+.imgs-dib{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+.sport{
+background-color: green;
+}
+.anime{
+    background-color: crimson;
+}
+.gamer{
+    background-color: darkred;
+}
+.origami{
+    background-color: deeppink;
+}
+.data-academic{
+    background-color: gray;
+}
+.scroll{
+    display:none;
+}
