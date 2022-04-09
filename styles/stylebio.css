@@ -1,66 +1,80 @@
-img{
-    height:200px;
-    width:200px;
+body {
+    background-image: url("/assets/images/biography/background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+img {
+    height: 200px;
+    width: 200px;
+}
+
+
 /* flex box models */
-body{
-    display:flex;
-    flex-direction: column;
-    width:100%;
-    height: 100%;
+
+#prueba {
+    display: none;
 }
-main{
+
+main {
     background-color: yellow;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    
-    padding:20px;
-
-}
-
-.data-personal{
-    background-color: cornflowerblue;
-}
-.hobbies{
-    background-color: aqua;
-    display:flex;
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    padding:20px;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.data-personal {
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+}
+
+.hobbies {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
     flex-grow: 0.5;
 }
-.typeshobbies{
+
+.typeshobbies {
     background-color: blueviolet;
-    display:flex;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 20px;
     justify-content: space-between;
 }
-.draw{
+
+.draw {
     background-color: coral;
 }
-.imgs-dib{
-    display:flex;
+
+.imgs-dib {
+    display: flex;
     flex-direction: row;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
-.sport{
-background-color: green;
+
+.sport {
+    background-color: green;
 }
-.anime{
+
+.anime {
     background-color: crimson;
 }
-.gamer{
+
+.gamer {
     background-color: darkred;
 }
-.origami{
+
+.origami {
     background-color: deeppink;
 }
-.data-academic{
+
+.data-academic {
+    display: flex;
+    flex-direction: column;
     background-color: gray;
-}
-.scroll{
-    display:none;
 }

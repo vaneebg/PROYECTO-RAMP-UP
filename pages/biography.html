@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="/assets/favicon-32x32.png">
     <link rel="stylesheet" href="/styles/stylebio.css">
+    <script src="/scripts/bioscript.js"></script>
     <title>Biografía VB</title>
 </head>
+
 <body>
     <header>
         <h1>Biografía</h1>
-    <button class="back"><a href="/index back.html">Atrás</a></button>
+        <button class="back"><a href="/index back.html">Atrás</a></button>
     </header>
     <main>
         <div class="data-personal">
-            <h3>Datos personales</h3>
-            <section class="scroll">
-            <p>Fecha nacimiento: 18-11-1994. <br>
-            Localidad: Valencia. <br>
-            Sexo: femenino. <br>
-            Altura: 1.76cm <br>
-            Alimentación: chocolate, comida basura y cervezas. <br>
-            Hábitat: Mayormente ciudad con anhelo de playa y campo. <br>
-            </p></section>
+            <button onclick="visibility()">Datos personales</button>
+            <section id="prueba">
+                <p>Fecha nacimiento: 18-11-1994. <br> Localidad: Valencia. <br> Sexo: femenino. <br> Altura: 1.76cm <br> Alimentación: chocolate, comida basura y cervezas. <br> Hábitat: Mayormente ciudad con anhelo de playa y campo. <br>
+                </p>
+            </section>
         </div>
         <div class="hobbies">
-            <h3>Hobbies</h3>
+            <button onclick="visibility()">Hobbies</button>
+
             <div class="typeshobbies scroll">
+
                 <div class="draw">
-                    <h4>Dibujo</h4>
+                    <button onclick="visibility()">Dibujo</button>
                     <section class="imgs-dib scroll">
                         <figure>
                             <img src="/assets/images/biography/dibujo/dibu1.jpg" alt="">
@@ -61,53 +62,56 @@
                         </figure>
                     </section>
                 </div>
+
                 <div class="sport">
-                    <h4>Deporte</h4>
-                    <p class="scroll">Desde siempre me ha encantado, aunque por problema de rodilla desde muy joven nunca he podido prácticar ningún deporte como tal aparte de ir al gimnasio. Sin embargo, lo considero un tiempo sagrado, un espacio de desconexión y constancia. <br>
-                    Y para los días complicados, siempre está la práctica del boxeo</p>
+                    <button onclick="visibility()">Deporte</button>
+                    <p class="scroll">Desde siempre me ha encantado, aunque por problema de rodilla desde muy joven nunca he podido prácticar ningún deporte como tal aparte de ir al gimnasio. Sin embargo, lo considero un tiempo sagrado, un espacio de desconexión y constancia.
+                        <br> Y para los días complicados, siempre está la práctica del boxeo</p>
                 </div>
+
                 <div class="anime">
-                    <h4>Anime</h4>
-                    <p class="scroll">Esta es mi sección favorita!!! Descubrí el anime hace ya como 4 o 5 años y desde entonces estoy enganchada. Empecé con lo típico de Dragon ball, pero seguí con One piece y ya otros muchos más: Death Note, Fairy Tail, Kimetsu no Yaiba, Promised Neverland, Full metal Alchemist, etc.. con especial mención a <span>Attack on Titan</span> 😉 <img src="/assets/images/biography/animes/levi.gif" alt="">
-                    <img src="/assets/images/biography/animes/titan.gif" alt=""></p>
-                    
+                    <button onclick="visibility()">Anime</button>
+                    <p class="scroll">Esta es mi sección favorita!!! Descubrí el anime hace ya como 4 o 5 años y desde entonces estoy enganchada. Empecé con lo típico de Dragon ball, pero seguí con One piece y ya otros muchos más: Death Note, Fairy Tail, Kimetsu no Yaiba,
+                        Promised Neverland, Full metal Alchemist, etc.. con especial mención a <span>Attack on Titan</span> 😉 <img src="/assets/images/biography/animes/levi.gif" alt="">
+                        <img src="/assets/images/biography/animes/titan.gif" alt=""></p>
+
                 </div>
+
                 <div class="gamer">
-                    <h4>Gamer</h4>
-                    <p class="scroll">Todo lo que me eches. Me adapto a cualquier juego aunque no tengo mucha simpatía por los de 1<sup>a</sup> persona. Especialmente disfruto los de aventuras, las sagas de Assassins Creed, los juegos de God of war, <img src="/assets/images/biography/gamer/godofwar.jpg" alt=""> Horizon, The last of us, The Witcher... la lista es infinita!</p>
+                    <button onclick="visibility()">Gamer</button>
+                    <p class="scroll">Todo lo que me eches. Me adapto a cualquier juego aunque no tengo mucha simpatía por los de 1<sup>a</sup> persona. Especialmente disfruto los de aventuras, las sagas de Assassins Creed, los juegos de God of war, <img src="/assets/images/biography/gamer/godofwar.jpg"
+                            alt=""> Horizon, The last of us, The Witcher... la lista es infinita!</p>
                 </div>
                 <div class="origami">
-                    <h4>Origami</h4>
+                    <button onclick="visibility()">Origami</button>
+
                     <section class="scroll">
-                    <figure>
-                        <img src="/assets/images/biography/papiroflexia/origami1.jpg" alt="">
-                        <figcaption>Charizard origami 3D</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="/assets/images/biography/papiroflexia/origami2.jpg" alt="">
-                        <figcaption>Flor compacta</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="/assets/images/biography/papiroflexia/origami3.jpg" alt="">
-                        <figcaption>Estrellitas</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="/assets/images/biography/papiroflexia/origami4.jpg" alt="">
-                        <figcaption>Loto de colores</figcaption>
-                    </figure>
-                </section>
+                        <figure>
+                            <img src="/assets/images/biography/papiroflexia/origami1.jpg" alt="">
+                            <figcaption>Charizard origami 3D</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="/assets/images/biography/papiroflexia/origami2.jpg" alt="">
+                            <figcaption>Flor compacta</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="/assets/images/biography/papiroflexia/origami3.jpg" alt="">
+                            <figcaption>Estrellitas</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="/assets/images/biography/papiroflexia/origami4.jpg" alt="">
+                            <figcaption>Loto de colores</figcaption>
+                        </figure>
+                    </section>
                 </div>
             </div>
         </div>
-        <div class="data-academic">
-            <h3>Datos académicos</h3>
-            <p class="scroll">2019. Máster Psicología General Sanitaria Universitat València. <br>
-                2017. Graduado Psicología Universitat València.  <br>
-                2012. 1er año cursado en Ingeniería Química UPV.  <br>
-                2010. Título Bachiller (rama Ciencias y Tecnología). <br>
-                2006. Título Educación Secundaria Obligatoria. <br> 
-                </p>
-        </div> 
+        <div class="data-academic"><button onclick="visibility()">Datos académicos</button>
+            <p class="scroll">2019. Máster Psicología General Sanitaria Universitat València. <br> 2017. Graduado Psicología Universitat València. <br> 2012. 1er año cursado en Ingeniería Química UPV. <br> 2010. Título Bachiller (rama Ciencias y Tecnología). <br> 2006.
+                Título Educación Secundaria Obligatoria. <br>
+            </p>
+        </div>
     </main>
 </body>
+
 </html>
