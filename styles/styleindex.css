@@ -10,6 +10,7 @@ body{
     width:100%;
     height:100%; 
     cursor: url("/assets/cursormarvel.png"), pointer;
+    margin: auto;
 }
 /* modelos flexbox */
 main{
@@ -21,6 +22,7 @@ main{
   display:flex;
   flex-direction: column;
   align-items: center;
+  height: 15em;
  
  
 
@@ -28,8 +30,24 @@ main{
 .title-bio{
   display:flex;
   justify-content: center;
- 
+  
+}
+.hello{
+  height: 3em;
+  width: 4em;
+  border: 3px solid black;
+  position: relative;
+  left: 60%;
+  bottom: 30em;
 
+}
+@keyframes example {
+  0%   {top: 30px}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+  
 }
 .titles-2-3{
   display:flex;
@@ -39,6 +57,7 @@ main{
   display:flex;
   justify-content:center;
   align-items:flex-end;
+ 
 }
 
 /* Dimensionar las imágenes para iconos */
@@ -52,7 +71,7 @@ h1{
   
 font-family: 'Hanalei Fill', cursive;
   letter-spacing: 3px;
-  font-size: 7em;
+  font-size: 5em;
   font-weight: 900;
   letter-spacing: 0.2em;
   word-spacing: 0.2em;
@@ -65,20 +84,21 @@ font-family: 'Hanalei Fill', cursive;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: brown;
-  border: 1px solid black;
+  position: relative;
+  top: -29px;
 }
 
 h2{
   font-family: 'Hanalei Fill', cursive;
-  font-size:3em;
+  font-size:2.3em;
   letter-spacing: 1.8em;
   font-weight: 100;
   color:brown;
   text-shadow: 4px -4px black;
   -webkit-text-stroke: 2px rgb(230, 171, 117);
   -moz-text-stroke: 2px rgb(230, 171, 117);
-  
-  border: 1px solid black;
+  position:relative;
+  top:-2.5em;
 
 
 }
@@ -96,11 +116,19 @@ a{
   display:flex;
   align-items: center;
   font-family: 'Piedra', cursive;
-  font-size:2.5em;
+  font-size:2em;
   font-weight: 900;
   letter-spacing: 3px;
-  -webkit-text-stroke: 2px brown;
-  -moz-text-stroke: 2px brown;
+  -webkit-text-stroke: 1.3px brown;
+  -moz-text-stroke: 1.3px brown;
   cursor:url("/assets/guantelete.png"), pointer;
 }
 
+/* imagen de groot */
+.imageGroot img{
+  height: 60vh;
+  width: 25vw;
+  position: relative;
+  bottom: 60px;
+  border-radius: 4em;
+}
