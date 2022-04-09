@@ -9,54 +9,6 @@ img {
     width: 200px;
 }
 
-
-/* flex box models */
-
-#prueba {
-    display: none;
-}
-
-main {
-    background-color: yellow;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 20px;
-}
-
-.data-personal {
-    background-color: cornflowerblue;
-    display: flex;
-    flex-direction: column;
-}
-
-.hobbies {
-    background-color: aqua;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    flex-grow: 0.5;
-}
-
-.typeshobbies {
-    background-color: blueviolet;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 20px;
-    justify-content: space-between;
-}
-
-.draw {
-    background-color: coral;
-}
-
-.imgs-dib {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
 .sport {
     background-color: green;
 }
@@ -73,8 +25,64 @@ main {
     background-color: deeppink;
 }
 
+.draw {
+    background-color: blue;
+}
+
+.data-academic {
+    background-color: gray;
+}
+
+.data-personal {
+    background-color: cornflowerblue;
+}
+
+
+/* flex box models */
+
+main {
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.data-personal,
 .data-academic {
     display: flex;
     flex-direction: column;
-    background-color: gray;
+}
+
+.hobbies {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px 0 20px 0;
+    flex-grow: 0.5;
+}
+
+.typeshobbies {
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 20px 0;
+}
+
+.draw,
+.sport,
+.anime,
+.gamer,
+.origami {
+    display: flex;
+    flex-direction: column;
+}
+
+.imgs-dib,
+.imgs-orig {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
