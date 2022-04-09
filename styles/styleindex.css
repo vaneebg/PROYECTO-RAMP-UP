@@ -1,6 +1,7 @@
 /* fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Piedra&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
 
 
 body{
@@ -30,33 +31,24 @@ main{
 .title-bio{
   display:flex;
   justify-content: center;
+  visibility:hidden;
   
 }
-.hello{
-  height: 3em;
-  width: 4em;
-  border: 3px solid black;
-  position: relative;
-  left: 60%;
-  bottom: 30em;
 
-}
-@keyframes example {
-  0%   {top: 30px}
-  25%  {background-color:yellow; left:200px; top:0px;}
-  50%  {background-color:blue; left:200px; top:200px;}
-  75%  {background-color:green; left:0px; top:200px;}
-  100% {background-color:red; left:0px; top:0px;}
-  
-}
 .titles-2-3{
   display:flex;
   justify-content: space-around;
+  visibility:hidden;
 }
 .imageGroot{
   display:flex;
   justify-content:center;
   align-items:flex-end;
+  animation-name: saludo;
+  filter: opacity(0);
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
  
 }
 
@@ -132,3 +124,49 @@ a{
   bottom: 60px;
   border-radius: 4em;
 }
+/* animaciones */
+.hello{
+  font-family:'Rubik Moonrocks', cursive;
+  font-size: 50px;
+  height: 1.2em;
+  width: 5.2em;
+  color: rgb(10, 36, 10);
+  -webkit-text-stroke: 1px rgb(39, 78, 39);
+  -moz-text-stroke: 1px rgb(39, 78, 39);
+  border-radius: 30px;
+  padding: 10px;
+  position: relative;
+  left:750px;
+  bottom: 400px;
+  font-family: 'Rubik Moonrocks', cursive;
+  background-color: white;
+  transform:rotate(20deg);
+  filter: opacity(0);
+  animation-name: saludo;
+  animation-duration: 7s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+
+}
+.hello:before {
+  border: 25px solid white;
+  content: '';
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  position: absolute;
+  bottom: -34px;
+  right: 245px;
+  transform: rotate(28deg);
+  animation-name: saludo;
+}
+@keyframes saludo {
+  0%   {filter: opacity(0);}
+  10% {filter: opacity(0.1);}
+  15% {filter: opacity(0.2);}
+  20% {filter: opacity(0.3);}
+  25%  {filter: opacity(0.4);}
+  50%  {filter: opacity(0.6);}
+  75%  {filter:opacity(0.8);}
+  100% {filter:opacity(1);}
+} 
