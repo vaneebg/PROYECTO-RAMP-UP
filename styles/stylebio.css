@@ -1,246 +1,298 @@
-    /* fonts */
-    
-    @import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Erica+One&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-    /* body */
-    
-    body {
-        background-color: #9abf88;
-        cursor: url("/assets/images/biography/cursorlevi.png"), pointer;
-    }
-    /* flex box models */
-    
-    header {
-        display: flex;
-        flex-direction: column-reverse;
-        height: 12em;
-    }
-    
-    main {
-        background-color: #11521A;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        padding: 20px;
-        font-family: 'Grape Nuts', cursive;
-        font-size: 1.3em;
-    }
-    
-    .data-personal,
-    .data-academic {
-        display: flex;
-        flex-direction: column;
-        align-content: space-around;
-    }
-    
-    .hobbies {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        padding: 20px 0 20px 0;
-        flex-grow: 0.5;
-    }
-    
-    .typeshobbies {
-        background-color: #195B25;
-        display: flex;
-        flex-direction: column;
-        padding: 20px 30px 20px 0;
-    }
-    
-    .draw,
-    .sport,
-    .anime,
-    .gamer,
-    .origami {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .imgs-dib,
-    .imgs-orig {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .content-personal,
-    .content-sport,
-    .content-gamer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    
-    .subsectionAnime {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .images-titan {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-    }
-    /* estilo titulo */
-    
-    h1 {
-        font-family: 'Erica One', cursive;
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 5.3em;
-        font-weight: 700;
-        letter-spacing: 10px;
-        background-image: url("/assets/images/biography/backgroundfont.jpg");
-        -webkit-text-stroke: 0.5px rgb(8, 48, 8);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -moz-background-clip: text;
-        -moz-text-fill-color: transparent;
-        margin-top: 0;
-        margin-bottom: 0.4em;
-    }
-    /* estilo imagenes */
-    
-    .imgs-dib img {
-        height: 8em;
-        width: 6.7em;
-        border-radius: 20px;
-    }
-    
-    .content-sport img {
-        height: 11em;
-        width: 11em;
-    }
-    
-    .anime img {
-        height: 8em;
-        width: 8em;
-    }
-    
-    .content-personal img {
-        height: 7em;
-        width: 13em;
-        border-radius: 50px;
-    }
-    
-    .images-titan img {
-        height: 6em;
-        width: 5em;
-    }
-    
-    .subsectionAnime p {
-        margin: auto;
-    }
-    
-    .levi {
-        height: 5em;
-        width: 4em;
-        position: relative;
-        bottom: 1.2em;
-        right: 8em;
-        border-radius: 30px;
-    }
-    
-    .content-gamer img {
-        height: 9em;
-        border-radius: 30px;
-    }
-    
-    .origami img {
-        height: 7em;
-        width: 7em;
-    }
-    /* style p */
-    
-    .content-sport p,
-    .subsectionAnime p,
-    .content-gamer p {
-        text-align: justify;
-        padding: 5px;
-    }
-    /* backgrounds colors */
-    
-    .sport {
-        background-color: #163D21;
-    }
-    
-    .anime {
-        background-color: #166221;
-    }
-    
-    .gamer {
-        background-color: #30884A;
-    }
-    
-    .origami {
-        background-color: #205C32;
-    }
-    
-    .draw {
-        background-color: #2A9C3F;
-    }
-    
-    .data-academic {
-        background: #369C55;
-        text-align: center;
-    }
-    
-    .data-personal {
-        background-color: #1E8F2D;
-    }
-    /* estilo botones */
-    
-    .back,
-    .back a {
-        all: unset;
-        width: 12em;
-    }
-    
-    .back img {
-        height: 2em;
-        width: 2em;
-        border-radius: 100px;
-        position: relative;
-        top: 10px;
-        right: 6px;
-    }
-    
-    .back a {
-        border: 2px dashed rgb(18, 92, 18);
-        padding: 10px;
-        border-radius: 50px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-    }
-    
-    .back a:hover,
-    .back a:active {
-        background-color: rgb(18, 92, 18);
-        color: white;
-    }
-    
-    main button {
-        font-family: 'Pacifico', cursive;
-        font-size: 1em;
-        text-align: left;
-        width: 14em;
-    }
-    
-    main button:hover {
-        background-color: #e4d99f;
-    }
-    
-    button:hover {
-        cursor: url("/assets/images/biography/iconattack.png"), pointer;
-    }
-    /* estilo cuerpo */
-    
-    figcaption {
-        text-align: center;
-        font-style: italic;
-        font-weight: bold;
-    }
-    /* boton function */
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Erica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+/* body */
+
+body {
+    background-color: #9abf88;
+    cursor: url("/assets/images/biography/cursorlevi.png"), pointer;
+}
+
+
+/* logotipo */
+
+.logotype {
+    display: flex;
+    justify-content: space-between;
+    width: 15em;
+    height: 2.7em;
+}
+
+.logoporta {
+    background-color: green;
+    border: 1px solid white;
+    height: 2.7em;
+    width: 3em;
+}
+
+.logoporta p {
+    text-align: center;
+}
+
+.logoporta p,
+.name p {
+    font-family: 'Fredericka the Great', cursive;
+    margin: 0;
+    font-size: 2em;
+    color: white;
+}
+
+
+/* flex box models */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head {
+    display: flex;
+    flex-direction: row;
+}
+
+main {
+    background-color: #11521A;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    font-family: 'Grape Nuts', cursive;
+    font-size: 1.3em;
+}
+
+.data-personal,
+.data-academic {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+.hobbies {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px 0 20px 0;
+    flex-grow: 0.5;
+}
+
+.typeshobbies {
+    background-color: #195B25;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px 20px 0;
+}
+
+.draw,
+.sport,
+.anime,
+.gamer,
+.origami {
+    display: flex;
+    flex-direction: column;
+}
+
+.imgs-dib,
+.imgs-orig {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content-personal,
+.content-sport,
+.content-gamer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.subsectionAnime {
+    display: flex;
+    flex-direction: column;
+}
+
+.images-titan {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+
+/* estilo titulo */
+
+h1 {
+    font-family: 'Erica One', cursive;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 5.3em;
+    font-weight: 700;
+    letter-spacing: 10px;
+    background-image: url("/assets/images/biography/backgroundfont.jpg");
+    -webkit-text-stroke: 0.5px rgb(8, 48, 8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    margin-top: 0;
+    margin-bottom: 0.4em;
+}
+
+
+/* estilo imagenes */
+
+.imgs-dib img {
+    height: 8em;
+    width: 6.7em;
+    border-radius: 20px;
+}
+
+.content-sport img {
+    height: 11em;
+    width: 11em;
+}
+
+.anime img {
+    height: 8em;
+    width: 8em;
+}
+
+.content-personal img {
+    height: 7em;
+    width: 13em;
+    border-radius: 50px;
+}
+
+.images-titan img {
+    height: 6em;
+    width: 5em;
+}
+
+.subsectionAnime p {
+    margin: auto;
+}
+
+.levi {
+    height: 5em;
+    width: 4em;
+    position: relative;
+    bottom: 1.2em;
+    right: 8em;
+    border-radius: 30px;
+}
+
+.content-gamer img {
+    height: 9em;
+    border-radius: 30px;
+}
+
+.origami img {
+    height: 7em;
+    width: 7em;
+}
+
+
+/* style p */
+
+.content-sport p,
+.subsectionAnime p,
+.content-gamer p {
+    text-align: justify;
+    padding: 5px;
+}
+
+
+/* backgrounds colors */
+
+.sport {
+    background-color: #163D21;
+}
+
+.anime {
+    background-color: #166221;
+}
+
+.gamer {
+    background-color: #30884A;
+}
+
+.origami {
+    background-color: #205C32;
+}
+
+.draw {
+    background-color: #2A9C3F;
+}
+
+.data-academic {
+    background: #369C55;
+    text-align: center;
+}
+
+.data-personal {
+    background-color: #1E8F2D;
+}
+
+
+/* estilo botones */
+
+.back,
+.back a {
+    all: unset;
+    width: 12em;
+}
+
+.back img {
+    height: 2em;
+    width: 2em;
+    border-radius: 100px;
+    position: relative;
+    top: 10px;
+    right: 6px;
+}
+
+.back a {
+    border: 2px dashed rgb(18, 92, 18);
+    padding: 10px;
+    border-radius: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.back a:hover,
+.back a:active {
+    background-color: rgb(18, 92, 18);
+    color: white;
+}
+
+main button {
+    font-family: 'Pacifico', cursive;
+    font-size: 1em;
+    text-align: left;
+    width: 14em;
+}
+
+main button:hover {
+    background-color: #e4d99f;
+}
+
+button:hover {
+    cursor: url("/assets/images/biography/iconattack.png"), pointer;
+}
+
+
+/* estilo cuerpo */
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+/* boton function */
