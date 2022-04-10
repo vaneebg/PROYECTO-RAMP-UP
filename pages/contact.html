@@ -1,14 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" sizes="300x300" href="assets/favicon.png">
-    
+    <link rel="stylesheet" href="/styles/contactstyle.css">
     <title>Contáctame</title>
 </head>
+
 <body>
-    
+    <header><button class="back"><a href="/index back.html"><img src="/assets/images/portfolio/atras.png" type="/image/png" alt=""></a></button>
+        <h1>GET IN TOUCH!</h1>
+    </header>
+    <main>
+        <img src="/assets/images/contact/relleno.jpg" alt="">
+        <form action="" method="post">
+            <fieldset>
+                <legend>Cuéntame un poco más sobre ti!</legend>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" size="15" pattern="[a-zA-Z]" title="No se permiten números" autocomplete="off" autofocus required tabindex="1"> <br>
+                <label for="surname">Apellidos:</label>
+                <input type="text" id="surname" name="surname" pattern="[a-zA-Z]" title="No se permiten números" autocomplete="off" required tabindex="2"> <br>
+
+                <label for="sexM">Hombre</label>
+                <input type="radio" id="sexM" name="sexo" value="masculino">
+
+                <label for="sexF">Mujer</label>
+                <input type="radio" id="sexF" name="sexo" value="femenino">
+                <label for="sexO">Otro</label>
+                <input type="radio" id="sexO" name="sexo" value="otro"><br>
+                <label for="country">Lugar de procedencia:</label><br>
+                <select for="country">
+                    <optgroup label="América">
+                       <option value="EEUU">EEUU</option>
+                       <option value="Canadá">Canadá</option>
+                       <option value="Mexico">México</option>
+                    </optgroup>
+                    <optgroup label="Europa">
+                        <option value="España">España</option>
+                        <option value="Francia">Francia</option>
+                        <option value="Alemania">Alemania</option>
+                     </optgroup>
+                     <optgroup label="África">
+                        <option value="Sudáfrica">Sudáfrica</option>
+                        <option value="Nigeria">Nigeria</option>
+                        <option value="Kenia">Kenia</option>
+                     </optgroup>
+                     <optgroup label="Asia">
+                        <option value="Japón">Japón</option>
+                        <option value="China">China</option>
+                        <option value="India">India</option>
+                     </optgroup>
+                     <optgroup label="Oceanía">
+                        <option value="NuevaZelanda">Nueva Zelanda</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Tonga">Tonga</option>
+                     </optgroup>
+                    </select>
+            </fieldset>
+            <fieldset>
+                <legend>Contacto:</legend>
+                <label for="email" class="contact">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" autocomplete="on" tabindex="5" required> <br>
+                <label for="tel" class="contact">Teléfono:</label>
+                <input type="tel" id="tel" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" title="formato teléfono" placeholder="555-555-555" tabindex="6" size="10"><br>
+                <textarea name="message" cols="40" rows="10" placeholder="Déjame algún mensaje aquí" tabindex="4"></textarea> <br>
+            </fieldset>
+            <input type="reset" value="Restablecer todo"> <br>
+            </fieldset>
+            <input type="submit" value="Enviar">
+        </form>
+        <img src="/assets/images/contact/relleno.jpg" alt="">
+    </main>
 </body>
+
 </html>

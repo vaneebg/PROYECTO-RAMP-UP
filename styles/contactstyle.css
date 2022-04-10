@@ -1,0 +1,15 @@
+img {
+    height: 6em;
+}
+
+
+/* flex models */
+
+header {
+    display: flex;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
