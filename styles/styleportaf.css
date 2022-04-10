@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Wallpoet&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Devonshire&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plaster&display=swap');
 
 /* body */
 
@@ -151,7 +153,7 @@ main {
     background-image: url("/assets/images/portfolio/separationyoda.png");
     background-repeat: repeat-x;
     background-position: center;
-    background-size: 6em;
+    background-size: 4em;
     height: 5em;
     width: 100%;
 }
@@ -182,7 +184,49 @@ main {
 }
 
 
+/* estilo title */
+
+h1 {
+    font-family: 'Wallpoet', cursive;
+    color: white;
+    font-size: 3em;
+    text-shadow: 2px -5px black;
+    letter-spacing: 0.2em;
+}
+
+.socialicons a img {
+    width: 2em;
+    height: 2em;
+    padding: 8px;
+}
+
+.circle {
+    border-radius: 100px;
+}
+
+
 /* estilo cuerpo */
+
+.presentation {
+    font-family: 'Devonshire', cursive;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 1.5em;
+}
+
+.projects p {
+    font-family: 'Devonshire', cursive;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
+h3 {
+    font-family: 'Plaster', cursive;
+    color: white;
+    font-size: xx-large;
+    text-shadow: 2px -4px black;
+}
 
 figure {
     text-align: center;
