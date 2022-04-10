@@ -1,0 +1,7 @@
+body {
+    background: radial-gradient(black, rgb(32, 32, 32), rgb(22, 21, 21));
+}
+
+img {
+    height: 10em;
+}

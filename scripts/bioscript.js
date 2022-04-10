@@ -7,5 +7,3 @@ function visibility(e) {
     e.addEventListener('click', () => {
         console.log("Jajaja le di");
     })
-})
-}
