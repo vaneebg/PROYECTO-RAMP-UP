@@ -1,7 +1,100 @@
 body {
     background: radial-gradient(black, rgb(32, 32, 32), rgb(22, 21, 21));
+    width: 100%;
+    height: 100%;
 }
 
 img {
-    height: 10em;
+    height: 5em;
+    width: 5em;
+}
+
+
+/* flex boxes */
+
+body {
+    display: flex;
+}
+
+#body-princ {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid white;
+    padding: 10px;
+}
+
+header {
+    display: flex;
+    border: 2px solid white;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.logotype {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.socialicons {
+    display: flex;
+    justify-content: center;
+    border: 1px solid white;
+}
+
+.nav-code,
+.nav-psico {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid white;
+}
+
+.emmet,
+.carta,
+.responsive {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid white;
+    align-items: center;
+    flex-basis: 33.30%;
+}
+
+.nav-psico a {
+    flex-basis: 50%;
+    /* que ocupen el mismo espacio independient del contenido */
+}
+
+
+/* estilo logo */
+
+.logoporta {
+    background-color: blueviolet;
+    height: 2em;
+    width: 2em;
+}
+
+
+/* estilo de la separación */
+
+.separation {
+    background-image: url("/assets/images/portfolio/separationyoda.png");
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: 6em;
+    height: 5em;
+    width: 100%;
+}
+
+
+/* estilo cuerpo */
+
+figure {
+    text-align: center;
 }
