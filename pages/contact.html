@@ -5,23 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" sizes="300x300" href="assets/favicon.png">
+    <link rel="icon" type="image/png" href="/assets/favicon-32x32.png">
     <link rel="stylesheet" href="/styles/contactstyle.css">
     <title>Contáctame</title>
 </head>
 
 <body>
-    <header><button class="back"><a href="/index back.html"><img src="/assets/images/portfolio/atras.png" type="/image/png" alt=""></a></button>
-        <h1>GET IN TOUCH!</h1>
+    <header><button class="back"><a href="/index back.html"><img src="/assets/images/contact/atras.png" type="/image/png" alt=""></a></button>
+
+        <div class="logotype">
+            <div class="logoporta">
+                <p> VB</p>
+            </div>
+            <section class="name">
+                <p>Vanesa BG</p>
+            </section>
     </header>
+    <h1>GET IN TOUCH!</h1>
     <main>
-        <img src="/assets/images/contact/relleno.jpg" alt="">
+        <img src="/assets/images/contact/relleno2.png" alt="">
         <form action="" method="post">
             <fieldset>
                 <legend>Cuéntame un poco más sobre ti!</legend>
-                <label for="name">Nombre:</label>
+                <label for="name">Nombre</label><br>
                 <input type="text" id="name" name="name" size="15" pattern="[a-zA-Z]" title="No se permiten números" autocomplete="off" autofocus required tabindex="1"> <br>
-                <label for="surname">Apellidos:</label>
+                <label for="surname">Apellidos</label><br>
                 <input type="text" id="surname" name="surname" pattern="[a-zA-Z]" title="No se permiten números" autocomplete="off" required tabindex="2"> <br>
 
                 <label for="sexM">Hombre</label>
@@ -30,8 +38,9 @@
                 <label for="sexF">Mujer</label>
                 <input type="radio" id="sexF" name="sexo" value="femenino">
                 <label for="sexO">Otro</label>
-                <input type="radio" id="sexO" name="sexo" value="otro"><br>
-                <label for="country">Lugar de procedencia:</label><br>
+                <input type="radio" id="sexO" name="sexo" value="otro"><br><br>
+                <span>
+                <label for="country">Lugar de procedencia</label><br>
                 <select for="country">
                     <optgroup label="América">
                        <option value="EEUU">EEUU</option>
@@ -59,20 +68,25 @@
                         <option value="Tonga">Tonga</option>
                      </optgroup>
                     </select>
+                </span>
             </fieldset>
             <fieldset>
                 <legend>Contacto:</legend>
-                <label for="email" class="contact">Correo electrónico:</label>
-                <input type="email" id="email" name="email" placeholder="example@gmail.com" autocomplete="on" tabindex="5" required> <br>
-                <label for="tel" class="contact">Teléfono:</label>
-                <input type="tel" id="tel" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" title="formato teléfono" placeholder="555-555-555" tabindex="6" size="10"><br>
-                <textarea name="message" cols="40" rows="10" placeholder="Déjame algún mensaje aquí" tabindex="4"></textarea> <br>
+                <label for="email" class="contact">Correo electrónico:</label> <br>
+                <input type="email" id="email" name="email" placeholder="tucorreoelectronico@gmail.com" autocomplete="on" tabindex="4" required> <br>
+                <label for="tel" class="contact">Teléfono:</label> <br>
+                <input type="tel" id="tel" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" title="formato teléfono" placeholder="555-555-555" tabindex="5" size="10"><br>
+                <label for="message">Si necesitas decirme algo, este es  tu espacio!</label>
+                <textarea name="message" cols="40" rows="10" placeholder="Déjame algún mensaje aquí" tabindex="6"></textarea> <br>
             </fieldset>
-            <input type="reset" value="Restablecer todo"> <br>
+            <div class="buttons">
+                <input type="reset" value="Reset">
+                <input type="submit" value="Send"></div>
             </fieldset>
-            <input type="submit" value="Enviar">
+
+
         </form>
-        <img src="/assets/images/contact/relleno.jpg" alt="">
+        <img src="/assets/images/contact/relleno2.png" alt=""></div>
     </main>
 </body>
 
