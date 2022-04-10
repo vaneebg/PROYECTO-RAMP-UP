@@ -4,60 +4,11 @@
     @import url('https://fonts.googleapis.com/css2?family=Erica+One&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+    /* body */
+    
     body {
         background-color: #9abf88;
         cursor: url("/assets/images/biography/cursorlevi.png"), pointer;
-    }
-    
-    h1 {
-        font-family: 'Erica One', cursive;
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 5.3em;
-        font-weight: 900;
-        letter-spacing: 10px;
-        background-image: url("/assets/images/biography/background2.jpeg");
-        -webkit-text-stroke: 0.5px white;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -moz-background-clip: text;
-        -moz-text-fill-color: transparent;
-        margin-top: 0;
-        margin-bottom: 0.4em;
-    }
-    
-    img {
-        height: 200px;
-        width: 200px;
-    }
-    
-    .sport {
-        background-color: #4e2472;
-    }
-    
-    .anime {
-        background-color: #65387d;
-    }
-    
-    .gamer {
-        background-color: #993767;
-    }
-    
-    .origami {
-        background-color: #a34974;
-    }
-    
-    .draw {
-        background-color: #9163b6;
-    }
-    
-    .data-academic {
-        background: #be5168;
-        text-align: center;
-    }
-    
-    .data-personal {
-        background-color: #7c9fb0;
     }
     /* flex box models */
     
@@ -68,7 +19,7 @@
     }
     
     main {
-        background-color: #5698c4;
+        background-color: #11521A;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -93,7 +44,7 @@
     }
     
     .typeshobbies {
-        background-color: #e279a3;
+        background-color: #195B25;
         display: flex;
         flex-direction: column;
         padding: 20px 30px 20px 0;
@@ -124,14 +75,129 @@
         justify-content: space-between;
     }
     
-    .imag-content {
-        padding-right: 2em;
+    .subsectionAnime {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .images-titan {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    /* estilo titulo */
+    
+    h1 {
+        font-family: 'Erica One', cursive;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 5.3em;
+        font-weight: 700;
+        letter-spacing: 10px;
+        background-image: url("/assets/images/biography/backgroundfont.jpg");
+        -webkit-text-stroke: 0.5px rgb(8, 48, 8);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+        margin-top: 0;
+        margin-bottom: 0.4em;
+    }
+    /* estilo imagenes */
+    
+    .imgs-dib img {
+        height: 8em;
+        width: 6.7em;
+        border-radius: 20px;
+    }
+    
+    .content-sport img {
+        height: 11em;
+        width: 11em;
+    }
+    
+    .anime img {
+        height: 8em;
+        width: 8em;
+    }
+    
+    .content-personal img {
+        height: 7em;
+        width: 13em;
+        border-radius: 50px;
+    }
+    
+    .images-titan img {
+        height: 6em;
+        width: 5em;
+    }
+    
+    .subsectionAnime p {
+        margin: auto;
+    }
+    
+    .levi {
+        height: 5em;
+        width: 4em;
+        position: relative;
+        bottom: 1.2em;
+        right: 8em;
+        border-radius: 30px;
+    }
+    
+    .content-gamer img {
+        height: 9em;
+        border-radius: 30px;
+    }
+    
+    .origami img {
+        height: 7em;
+        width: 7em;
+    }
+    /* style p */
+    
+    .content-sport p,
+    .subsectionAnime p,
+    .content-gamer p {
+        text-align: justify;
+        padding: 5px;
+    }
+    /* backgrounds colors */
+    
+    .sport {
+        background-color: #163D21;
+    }
+    
+    .anime {
+        background-color: #166221;
+    }
+    
+    .gamer {
+        background-color: #30884A;
+    }
+    
+    .origami {
+        background-color: #205C32;
+    }
+    
+    .draw {
+        background-color: #2A9C3F;
+    }
+    
+    .data-academic {
+        background: #369C55;
+        text-align: center;
+    }
+    
+    .data-personal {
+        background-color: #1E8F2D;
     }
     /* estilo botones */
     
     .back,
     .back a {
         all: unset;
+        width: 12em;
     }
     
     .back img {
@@ -172,26 +238,9 @@
     }
     /* estilo cuerpo */
     
-    .content-personal img {
-        height: 7em;
-        width: 13em;
-        border-radius: 50px;
-        /* esto de la posicion es al reves, si lo quieres subir parriba, coges abajo */
-    }
-    
     figcaption {
         text-align: center;
         font-style: italic;
         font-weight: bold;
-    }
-    
-    .iconbio {
-        position: relative;
-        height: 8em;
-        width: 9em;
-        top: -5em;
-        left: 55em;
-        transform: rotate(29deg);
-        margin: -10em;
     }
     /* boton function */
