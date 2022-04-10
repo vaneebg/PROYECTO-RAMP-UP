@@ -1,6 +1,11 @@
 /* fuentes */
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Wallpoet&display=swap');
+
+/* body */
+
 body {
     background: radial-gradient(black, rgb(32, 32, 32), rgb(22, 21, 21));
     width: 100%;
@@ -32,12 +37,14 @@ header {
     border: 2px solid white;
     justify-content: space-between;
     padding: 10px;
+    flex-basis: 33.30%;
 }
 
 .logotype {
     display: flex;
     flex-direction: row;
-    border: 1px solid white;
+    align-items: baseline;
+    justify-content: space-between;
 }
 
 main {
@@ -75,13 +82,66 @@ main {
     /* que ocupen el mismo espacio independient del contenido */
 }
 
+.logoporta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* estilo logo */
 
+.logotype {
+    width: 15em;
+    height: 2.7em;
+}
+
 .logoporta {
     background-color: blueviolet;
-    height: 2em;
-    width: 2em;
+    border: 1px solid white;
+    height: 2.7em;
+    width: 3em;
+}
+
+.logoporta p {
+    text-align: center;
+}
+
+.logoporta p,
+.name p {
+    font-family: 'Fredericka the Great', cursive;
+    margin: 0;
+    font-size: 2em;
+    color: white;
+}
+
+
+/* estilo atrás */
+
+.back img {
+    width: 3em;
+    height: 3em;
+    background-color: white;
+    border-radius: 100px;
+}
+
+.back {
+    all: unset;
+}
+
+
+/* estilo nav header */
+
+.header-nav a {
+    all: unset;
+    color: white;
+    padding: 2px;
+}
+
+.header-nav a:hover {
+    color: black;
+    background-color: white;
+    border: 1px dashed black;
 }
 
 
@@ -111,7 +171,7 @@ main {
     letter-spacing: 0.3em;
     font-family: 'Rubik Glitch', cursive;
     color: white;
-    font-size: 1em;
+    font-size: 3em;
     padding: 2px;
 }
 
