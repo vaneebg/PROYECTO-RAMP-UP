@@ -1,4 +1,4 @@
-/* fuentes */
+/* fonts */
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
@@ -6,6 +6,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Devonshire&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Plaster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Maiden+Orange&display=swap');
+
+/* ------------------------- */
+
 
 /* body */
 
@@ -17,17 +20,26 @@ body {
 }
 
 
+/* ------------------------------- */
+
+
 /* flex boxes */
 
 body {
     display: flex;
 }
 
+
+/* dos div, el contenido principal y la barra lateral */
+
 #body-princ {
     display: flex;
     flex-direction: column;
     padding: 10px;
 }
+
+
+/* dos div, header y main */
 
 header {
     display: flex;
@@ -37,6 +49,9 @@ header {
     flex-basis: 33.33%;
 }
 
+
+/* tres div, boton atrás, logotipo y navegación */
+
 .logotype {
     display: flex;
     flex-direction: row;
@@ -44,22 +59,34 @@ header {
     justify-content: space-between;
 }
 
+
+/* dos div, el logo del cuadrado y el texto de al lado */
+
 main {
     display: flex;
     flex-direction: column;
     padding: 10px;
 }
 
+
+/* 4 div, el titulo principal, presentación, la separación principal y los proyectos */
+
 .socialicons {
     display: flex;
     justify-content: center;
 }
+
+
+/* barra de social media */
 
 .nav-code,
 .nav-psico {
     display: flex;
     flex-direction: row;
 }
+
+
+/* los enlaces de nav formados por las imagenes */
 
 .emmet,
 .carta,
@@ -69,12 +96,15 @@ main {
     align-items: center;
     justify-content: space-between;
     flex-basis: 33.30%;
+    margin: 6px;
 }
 
+
+/* flex basis que ocupen el mismo espacio independient del contenido*/
+
 .nav-psico {
-    flex-basis: 50%;
+    display: flex;
     justify-content: center;
-    /* que ocupen el mismo espacio independient del contenido */
 }
 
 .logoporta {
@@ -83,6 +113,12 @@ main {
     align-items: center;
     box-sizing: border-box;
 }
+
+
+/* border box porque cuando das al link de la derecha y aparezca border, no se mueva */
+
+
+/* ------------------------ */
 
 
 /* estilo logo */
@@ -112,7 +148,13 @@ main {
 }
 
 
-/* estilo atrás */
+/* margin 0 para que el texto ocupe solo la letra */
+
+
+/* --------------------------- */
+
+
+/* estilo boton atrás */
 
 .back img {
     width: 3em;
@@ -126,11 +168,14 @@ main {
 }
 
 
+/* --------------------------- */
+
+
 /* estilo nav header */
 
 .header-nav a {
-    box-sizing: border-box;
     all: unset;
+    box-sizing: border-box;
     color: white;
     padding: 2px;
 }
@@ -143,6 +188,9 @@ main {
 }
 
 
+/* ------------------------------ */
+
+
 /* estilo de la separación */
 
 .separation {
@@ -151,8 +199,11 @@ main {
     background-position: center;
     background-size: 4em;
     height: 5em;
-    width: 100%;
+    width: auto;
 }
+
+
+/* ------------------------------------ */
 
 
 /* estilo boton lateral subir */
@@ -181,6 +232,9 @@ main {
 }
 
 
+/* ----------------------- */
+
+
 /* estilo title */
 
 h1 {
@@ -197,9 +251,18 @@ h1 {
     padding: 8px;
 }
 
+
+/* tamaño de las imagenes link de social media */
+
 .circle {
     border-radius: 100px;
 }
+
+
+/* algunas social media tenían fondo, pero al bordearlas a redondo se soluciona */
+
+
+/* ---------------------------- */
 
 
 /* estilo cuerpo */
@@ -226,11 +289,17 @@ h3 {
 }
 
 
+/* ------------------------------------ */
+
+
 /* estilo contenidos */
 
 figure {
     text-align: center;
 }
+
+
+/* las leyendas de las fotos centradas */
 
 .nav-psico img {
     height: 10em;
@@ -249,16 +318,13 @@ figure {
     color: black;
 }
 
-.emmet,
-.carta,
-.responsive {
-    margin: 6px;
-}
-
 .link img {
     height: 9em;
     width: 13em;
 }
+
+
+/* para las imágenes dentro de la sección código */
 
 .content p {
     text-align: center;
