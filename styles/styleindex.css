@@ -190,6 +190,14 @@
         border: 3px solid brown;
     }
     /* ------------------------------- */
+    /* estilos al darle al boton */
+    
+    .insidebut a:hover {
+        background-color: brown;
+        border-radius: 30px;
+        -webkit-text-stroke: 1px white;
+        -moz-text-stroke: 1px white;
+    }
     /* animaciones */
     
     .hello {
