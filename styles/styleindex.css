@@ -308,9 +308,6 @@
     /* DISEÑO RESPONSIVE */
     
     @media screen and (min-width:365px) and (max-width: 749px) {
-        h1 {
-            font-size: 2em;
-        }
         h2 {
             font-size: 1em;
             letter-spacing: 0.3em;
