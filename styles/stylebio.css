@@ -14,6 +14,9 @@ body {
 }
 
 
+/* ------------------ */
+
+
 /* logotipo */
 
 .logotype {
@@ -43,6 +46,9 @@ body {
 }
 
 
+/* ------------------------ */
+
+
 /* flex box models */
 
 header {
@@ -51,10 +57,8 @@ header {
     align-items: center;
 }
 
-.head {
-    display: flex;
-    flex-direction: row;
-}
+
+/* dentro de header botón atrás y logotipo */
 
 main {
     background-color: #11521A;
@@ -66,12 +70,8 @@ main {
     font-size: 1.3em;
 }
 
-.data-personal,
-.data-academic {
-    display: flex;
-    flex-direction: column;
-    align-content: space-around;
-}
+
+/* dentro de main botones y div de las clases */
 
 .hobbies {
     display: flex;
@@ -81,6 +81,9 @@ main {
     flex-grow: 0.5;
 }
 
+
+/* dentro de hobbies boton y div clases de hobbies */
+
 .typeshobbies {
     background-color: #195B25;
     display: flex;
@@ -88,14 +91,8 @@ main {
     padding: 20px 30px 20px 0;
 }
 
-.draw,
-.sport,
-.anime,
-.gamer,
-.origami {
-    display: flex;
-    flex-direction: column;
-}
+
+/* dentro de typeshobbies boton y div subclase */
 
 .imgs-dib,
 .imgs-orig {
@@ -105,6 +102,9 @@ main {
     justify-content: center;
 }
 
+
+/* posicionamiento para las imagenes dentro de dibujo y dentro de origami */
+
 .content-personal,
 .content-sport,
 .content-gamer {
@@ -113,16 +113,28 @@ main {
     justify-content: space-between;
 }
 
+
+/* los tres formados por una seccion y una imagen */
+
 .subsectionAnime {
     display: flex;
     flex-direction: column;
 }
+
+
+/* parrafo y div attack on titan */
 
 .images-titan {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
 }
+
+
+/* dos imagenes */
+
+
+/* ----------------------------- */
 
 
 /* estilo titulo */
@@ -143,6 +155,9 @@ h1 {
     margin-top: 0;
     margin-bottom: 0.4em;
 }
+
+
+/* ------------------------------ */
 
 
 /* estilo imagenes */
@@ -198,6 +213,9 @@ h1 {
 }
 
 
+/* ------------------------- */
+
+
 /* style p */
 
 .content-sport p,
@@ -206,6 +224,9 @@ h1 {
     text-align: justify;
     padding: 5px;
 }
+
+
+/* ------------------------------------------ */
 
 
 /* backgrounds colors */
@@ -240,6 +261,9 @@ h1 {
 }
 
 
+/* ---------------------------------- */
+
+
 /* estilo botones */
 
 .back,
@@ -257,12 +281,18 @@ h1 {
     right: 6px;
 }
 
+
+/* diseño de la imagen del botón para ir atrás */
+
 .back a {
     border: 2px dashed rgb(18, 92, 18);
     padding: 10px;
     border-radius: 50px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
+
+
+/* diseño titulo del botón atrás */
 
 .back a:hover,
 .back a:active {
@@ -277,6 +307,17 @@ main button {
     width: 14em;
 }
 
+
+/* diseño de todos los botones del cuerpo */
+
+.typeshobbies button {
+    font-size: 0.8em;
+    margin: 5px;
+}
+
+
+/* diseño botones de los tipos de hobbies para que tengan más espacio y no verse tan agrupados al esconder el contenido */
+
 main button:hover {
     background-color: #e4d99f;
 }
@@ -286,7 +327,10 @@ button:hover {
 }
 
 
-/* estilo cuerpo */
+/* ------------------------------------ */
+
+
+/* estilos varios */
 
 figcaption {
     text-align: center;
@@ -295,4 +339,4 @@ figcaption {
 }
 
 
-/* boton function */
+/* estilo para la leyenda de las fotos */
