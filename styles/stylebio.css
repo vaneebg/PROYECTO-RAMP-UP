@@ -128,6 +128,7 @@ main {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 
@@ -173,20 +174,15 @@ h1 {
     width: 11em;
 }
 
-.anime img {
-    height: 8em;
-    width: 8em;
-}
-
 .content-personal img {
     height: 7em;
     width: 13em;
     border-radius: 50px;
 }
 
-.images-titan img {
+.titan {
     height: 6em;
-    width: 5em;
+    width: 3.5em;
 }
 
 .subsectionAnime p {
@@ -194,12 +190,19 @@ h1 {
 }
 
 .levi {
-    height: 5em;
-    width: 4em;
-    position: relative;
-    bottom: 1.2em;
-    right: 8em;
+    height: 8em;
+    width: 8.2em;
     border-radius: 30px;
+}
+
+.leviandando {
+    height: 4em;
+    width: 2.5em;
+}
+
+.titan {
+    height: 8em;
+    width: 8em;
 }
 
 .content-gamer img {
@@ -340,3 +343,6 @@ figcaption {
 
 
 /* estilo para la leyenda de las fotos */
+
+
+/* ---------------------- */

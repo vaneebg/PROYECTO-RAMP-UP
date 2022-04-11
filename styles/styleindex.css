@@ -13,7 +13,6 @@
         width: auto;
         height: auto;
         cursor: url("/assets/cursormarvel.png"), pointer;
-        margin: auto;
     }
     /* -------------------------------- */
     /* modelos flexbox */
@@ -198,6 +197,7 @@
         -webkit-text-stroke: 1px white;
         -moz-text-stroke: 1px white;
     }
+    /* --------------------------- */
     /* animaciones */
     
     .hello {
@@ -305,3 +305,54 @@
             visibility: initial;
         }
     }
+    /* DISEÑO RESPONSIVE */
+    
+    @media screen and (min-width:365px) and (max-width: 749px) {
+        h1 {
+            font-size: 2em;
+        }
+        h2 {
+            font-size: 1em;
+            letter-spacing: 0.3em;
+        }
+        .titles-2-3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        a {
+            font-size: 1.2em;
+        }
+        button {
+            width: 16em;
+            margin: 7px;
+        }
+        /* margin para que no se queden tan pegadas */
+        .imageGroot {
+            align-items: center;
+            justify-content: space-around;
+        }
+        /* para que se muestren al nivel de groot */
+        .hello {
+            font-size: 1.5em;
+            height: auto;
+            transform: none;
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+        }
+        .whereYouGo {
+            font-size: 1em;
+            letter-spacing: normal;
+            height: auto;
+            writing-mode: vertical-lr;
+            text-orientation: upright;
+            width: auto;
+            text-align: center;
+            transform: none;
+        }
+        /* aqui lr porque busco invertir los dos bloques que tengo en ese div */
+    }
+    
+    @media screen and (min-width:750px) and (max-width: 1024px) {}
+    
+    @media screen and (min-width:1024px) {}
