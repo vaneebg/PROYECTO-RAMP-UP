@@ -1,429 +1,287 @@
-/* fonts */
-
-@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Erica+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
-
-/* body */
-
-body {
-    background-color: #9abf88;
-    cursor: url("/assets/images/biography/cursorlevi.png"), pointer;
-}
-
-
-/* ------------------ */
-
-
-/* logotipo */
-
-.logotype {
-    display: flex;
-    justify-content: space-between;
-    width: 15em;
-    height: 2.7em;
-}
-
-.logoporta {
-    background-color: green;
-    border: 1px solid white;
-    height: 2.7em;
-    width: 3em;
-}
-
-.logoporta p {
-    text-align: center;
-}
-
-.logoporta p,
-.name p {
-    font-family: 'Fredericka the Great', cursive;
-    margin: 0;
-    font-size: 2em;
-    color: white;
-}
-
-
-/* ------------------------ */
-
-
-/* flex box models */
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-/* dentro de header botón atrás y logotipo */
-
-main {
-    background-color: #11521A;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 20px;
-    font-family: 'Grape Nuts', cursive;
-    font-size: 1.3em;
-}
-
-
-/* dentro de main botones y div de las clases */
-
-.hobbies {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 20px 0 20px 0;
-    flex-grow: 0.5;
-}
-
-
-/* dentro de hobbies boton y div clases de hobbies */
-
-.typeshobbies {
-    background-color: #195B25;
-    display: flex;
-    flex-direction: column;
-    padding: 20px 30px 20px 0;
-}
-
-
-/* dentro de typeshobbies boton y div subclase */
-
-.imgs-dib,
-.imgs-orig {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-
-/* posicionamiento para las imagenes dentro de dibujo y dentro de origami */
-
-.content-personal,
-.content-sport,
-.content-gamer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-
-/* los tres formados por una seccion y una imagen */
-
-.subsectionAnime {
-    display: flex;
-    flex-direction: column;
-}
-
-
-/* parrafo y div attack on titan */
-
-.images-titan {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-
-/* dos imagenes */
-
-
-/* ----------------------------- */
-
-
-/* estilo titulo */
-
-h1 {
-    font-family: 'Erica One', cursive;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 5.3em;
-    font-weight: 700;
-    letter-spacing: 10px;
-    background-image: url("/assets/images/biography/backgroundfont.jpg");
-    -webkit-text-stroke: 0.5px rgb(8, 48, 8);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-    margin-top: 0;
-    margin-bottom: 0.4em;
-}
-
-
-/* ------------------------------ */
-
-
-/* estilo imagenes */
-
-.imgs-dib img {
-    height: 8em;
-    width: 6.7em;
-    border-radius: 20px;
-}
-
-.content-sport img {
-    height: 11em;
-    width: 11em;
-}
-
-.content-personal img {
-    height: 7em;
-    width: 13em;
-    border-radius: 50px;
-}
-
-.titan {
-    height: 6em;
-    width: 3.5em;
-}
-
-.subsectionAnime p {
-    margin: auto;
-}
-
-.levi {
-    height: 8em;
-    width: 8.2em;
-    border-radius: 30px;
-}
-
-.leviandando {
-    height: 4em;
-    width: 2.5em;
-}
-
-.titan {
-    height: 8em;
-    width: 8em;
-}
-
-.content-gamer img {
-    height: 9em;
-    border-radius: 30px;
-}
-
-.origami img {
-    height: 7em;
-    width: 7em;
-}
-
-
-/* ------------------------- */
-
-
-/* style p */
-
-.content-sport p,
-.subsectionAnime p,
-.content-gamer p {
-    text-align: justify;
-    padding: 5px;
-}
-
-
-/* ------------------------------------------ */
-
-
-/* backgrounds colors */
-
-.sport {
-    background-color: #163D21;
-}
-
-.anime {
-    background-color: #166221;
-}
-
-.gamer {
-    background-color: #30884A;
-}
-
-.origami {
-    background-color: #205C32;
-}
-
-.draw {
-    background-color: #2A9C3F;
-}
-
-.data-academic {
-    background: #369C55;
-    text-align: center;
-}
-
-.data-personal {
-    background-color: #1E8F2D;
-}
-
-
-/* ---------------------------------- */
-
-
-/* estilo botones */
-
-.back,
-.back a {
-    all: unset;
-    width: 12em;
-}
-
-.back img {
-    height: 2em;
-    width: 2em;
-    border-radius: 100px;
-    position: relative;
-    top: 10px;
-    right: 6px;
-}
-
-
-/* diseño de la imagen del botón para ir atrás */
-
-.back a {
-    border: 2px dashed rgb(18, 92, 18);
-    padding: 10px;
-    border-radius: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-}
-
-
-/* diseño titulo del botón atrás */
-
-.back a:hover,
-.back a:active {
-    background-color: rgb(18, 92, 18);
-    color: white;
-}
-
-main button {
-    font-family: 'Pacifico', cursive;
-    font-size: 1em;
-    text-align: left;
-    width: 14em;
-}
-
-
-/* diseño de todos los botones del cuerpo */
-
-.typeshobbies button {
-    font-size: 0.8em;
-    margin: 5px;
-}
-
-
-/* diseño botones de los tipos de hobbies para que tengan más espacio y no verse tan agrupados al esconder el contenido */
-
-main button:hover {
-    background-color: #e4d99f;
-}
-
-button:hover {
-    cursor: url("/assets/images/biography/iconattack.png"), pointer;
-}
-
-
-/* ------------------------------------ */
-
-
-/* estilos varios */
-
-figcaption {
-    text-align: center;
-    font-style: italic;
-    font-weight: bold;
-}
-
-
-/* estilo para la leyenda de las fotos */
-
-
-/* ---------------------- */
-
-
-/* media queries */
-
-@media screen and (min-width:365px) and (max-width: 749px) {
+    /* fonts */
+    
+    @import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Erica+One&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+    /* body */
+    
+    body {
+        background-color: #9abf88;
+        cursor: url("/assets/images/biography/cursorlevi.png"), pointer;
+    }
+    /* ------------------ */
+    /* logotipo */
+    
+    .logotype {
+        display: flex;
+        justify-content: space-between;
+        width: 15em;
+        height: 2.7em;
+    }
+    
+    .logoporta {
+        background-color: green;
+        border: 1px solid white;
+        height: 2.7em;
+        width: 3em;
+    }
+    
+    .logoporta p {
+        text-align: center;
+    }
+    
+    .logoporta p,
+    .name p {
+        font-family: 'Fredericka the Great', cursive;
+        margin: 0;
+        font-size: 2em;
+        color: white;
+    }
+    /* ------------------------ */
+    /* flex box models */
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /* dentro de header botón atrás y logotipo */
+    
+    main {
+        background-color: #11521A;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 20px;
+        font-family: 'Grape Nuts', cursive;
+        font-size: 1.3em;
+    }
+    /* dentro de main botones y div de las clases */
+    
+    .hobbies {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 20px 0 20px 0;
+        flex-grow: 0.5;
+    }
+    /* dentro de hobbies boton y div clases de hobbies */
+    
+    .typeshobbies {
+        background-color: #195B25;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 30px 20px 0;
+    }
+    /* dentro de typeshobbies boton y div subclase */
+    
+    .imgs-dib,
+    .imgs-orig {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    /* posicionamiento para las imagenes dentro de dibujo y dentro de origami */
+    
     .content-personal,
     .content-sport,
     .content-gamer {
         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    /* los tres formados por una seccion y una imagen */
+    
+    .subsectionAnime {
+        display: flex;
         flex-direction: column;
     }
-    /* imagenes animes */
-    .levi {
-        height: 3em;
-    }
-    .titan {
-        display: none;
-    }
-    .leviandando {
-        height: 2em;
-    }
+    /* parrafo y div attack on titan */
+    
     .images-titan {
-        justify-content: space-around;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-end;
     }
-    /* ----------------- */
-    .content-gamer,
-    .imag-content {
-        margin: 6px;
-    }
-    /* para que se separe un mínimo de los border del container */
-    .content-personal section {
-        width: 14em;
-    }
-    /* para que el texto, que lleva br se ajuste y no traspase la pantalla */
-    main button {
-        width: 10em;
-    }
+    /* dos imagenes */
+    /* ----------------------------- */
+    /* estilo titulo */
+    
     h1 {
-        font-size: 1.5em;
+        font-family: 'Erica One', cursive;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 5.3em;
+        font-weight: 700;
+        letter-spacing: 10px;
+        background-image: url("/assets/images/biography/backgroundfont.jpg");
+        -webkit-text-stroke: 0.5px rgb(8, 48, 8);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+        margin-top: 0;
+        margin-bottom: 0.4em;
     }
-    .header {
-        justify-content: center;
+    /* ------------------------------ */
+    /* estilo imagenes */
+    
+    .imgs-dib img {
+        height: 8em;
+        width: 6.7em;
+        border-radius: 20px;
     }
-    /* diseño logo */
-    .logoporta p {
-        font-size: 1em;
+    
+    .content-sport img {
+        height: 11em;
+        width: 11em;
     }
-    .logoporta {
-        width: 1.3em;
-        height: 1.3em;
+    
+    .content-personal img {
+        height: 7em;
+        width: 13em;
+        border-radius: 50px;
     }
-    .logotype {
-        justify-content: center;
+    
+    .titan {
+        height: 6em;
+        width: 3.5em;
     }
-    .name p {
-        font-size: 1em;
+    
+    .subsectionAnime p {
+        margin: auto;
     }
-    /* boton atrás */
+    
+    .levi {
+        height: 8em;
+        width: 8.2em;
+        border-radius: 30px;
+    }
+    
+    .leviandando {
+        height: 4em;
+        width: 2.5em;
+    }
+    
+    .titan {
+        height: 8em;
+        width: 8em;
+    }
+    
+    .content-gamer img {
+        height: 9em;
+        border-radius: 30px;
+    }
+    
+    .origami img {
+        height: 7em;
+        width: 7em;
+    }
+    /* ------------------------- */
+    /* style p */
+    
+    .content-sport p,
+    .subsectionAnime p,
+    .content-gamer p {
+        text-align: justify;
+        padding: 5px;
+    }
+    /* ------------------------------------------ */
+    /* backgrounds colors */
+    
+    .sport {
+        background-color: #163D21;
+    }
+    
+    .anime {
+        background-color: #166221;
+    }
+    
+    .gamer {
+        background-color: #30884A;
+    }
+    
+    .origami {
+        background-color: #205C32;
+    }
+    
+    .draw {
+        background-color: #2A9C3F;
+    }
+    
+    .data-academic {
+        background: #369C55;
+        text-align: center;
+    }
+    
+    .data-personal {
+        background-color: #1E8F2D;
+    }
+    /* ---------------------------------- */
+    
     .back,
     .back a {
         all: unset;
-        width: 1em;
-        padding: 0;
+        flex-direction: row;
     }
-    .back img {
-        height: 1em;
-        width: 1em;
-        border-radius: 1em;
-    }
-    /* diseño de la imagen del botón para ir atrás */
-    .back a {
+    
+    .back {
+        display: flex;
+        flex-direction: row;
         border: 2px dashed rgb(18, 92, 18);
-        padding: 10px;
         border-radius: 50px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        padding: 4px;
+        width: 6em;
+        height: 2em;
     }
-}
-
-@media screen and (min-width:750px) and (max-width: 1024px) {}
-
-@media screen and (min-width:1024px) {}
+    
+    .back img {
+        height: 2em;
+        width: 2em;
+        border-radius: 100px;
+    }
+    /* diseño de la imagen redondeada del botón para ir atrás */
+    /* diseño titulo del botón atrás */
+    
+    .back:hover {
+        background-color: rgb(18, 92, 18);
+        color: white;
+        border: 2px dashed white;
+    }
+    
+    main button {
+        font-family: 'Pacifico', cursive;
+        font-size: 1em;
+        text-align: left;
+        width: 14em;
+    }
+    /* diseño de todos los botones del cuerpo */
+    
+    .typeshobbies button {
+        font-size: 0.8em;
+        margin: 5px;
+    }
+    /* diseño botones de los tipos de hobbies para que tengan más espacio y no verse tan agrupados al esconder el contenido */
+    
+    main button:hover {
+        background-color: #e4d99f;
+    }
+    
+    button:hover {
+        cursor: url("/assets/images/biography/iconattack.png"), pointer;
+    }
+    /* ------------------------------------ */
+    /* estilos varios */
+    
+    figcaption {
+        text-align: center;
+        font-style: italic;
+        font-weight: bold;
+    }
+    /* estilo para la leyenda de las fotos */
+    /* ---------------------- */
+    /* media queries */
