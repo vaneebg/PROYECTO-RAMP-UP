@@ -1,9 +1,11 @@
 // Agregar listener
 
-const botones = document.querySlectorAll(".scroll")
+let botones = document.getElementById("scroll")
 
-function visibility(e) {
-    console.log(e);
-    e.addEventListener('click', () => {
-        console.log("Jajaja le di");
-    })
+function visibility() {
+    if (botones.style.display != "none") {
+        botones.style.display = "none"
+    } else {
+        botones.style.display = "block"
+    }
+}

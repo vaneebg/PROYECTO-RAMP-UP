@@ -45,7 +45,6 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        flex-basis: 20%;
     }
     
     .hello,
@@ -136,7 +135,7 @@
     
     .whereYouGo {
         height: 2em;
-        width: 7em;
+        width: 6em;
     }
     
     .hello {
@@ -158,16 +157,13 @@
         border-radius: 30px;
         font-family: 'Rubik Moonrocks', cursive;
         background-color: white;
-        transform: rotate(20deg);
-        animation-duration: 7s;
-        animation-delay: 3s;
-        animation-fill-mode: backwards;
         border: 3px solid green;
     }
     
     .whereYouGo {
         font-family: 'Rubik Moonrocks', cursive;
-        font-size: 2em;
+        font-size: 1.2em;
+        width: auto;
         text-align: center;
         color: rgb(10, 36, 10);
         -webkit-text-stroke: 1px rgb(39, 78, 39);
@@ -175,11 +171,6 @@
         border-radius: 30px;
         font-family: 'Rubik Moonrocks', cursive;
         background-color: white;
-        transform: rotate(-20deg);
-        animation-fill-mode: backwards;
-        animation-duration: 5s;
-        animation-delay: 10s;
-        border: 2px solid green;
     }
     /* animaciones */
     
@@ -187,27 +178,33 @@
         filter: opacity(0);
         animation-name: saludo;
         transform: rotate(20deg);
-        animation-duration: 7s;
+        animation-duration: 4s;
+        width: auto;
         animation-delay: 3s;
         animation-fill-mode: backwards;
         border: 3px solid green;
+        /* backwards porque quiero que vuelva a su valor inicial que es opacidad 0 */
     }
+    /* pongo opcacity como filtro inicial ya que */
     
     .whereYouGo {
         filter: opacity(0);
         animation-name: direction;
         transform: rotate(-20deg);
         animation-fill-mode: backwards;
-        animation-duration: 5s;
-        animation-delay: 10s;
+        animation-duration: 4s;
+        animation-delay: 7s;
         border: 2px solid green;
     }
+    /* forwards
+El objeto sobre el que se aplica la animación quedará con los valores y estilos que le aplique el último keyframe de la ejecución de la animación. */
     
     .imageGroot {
         animation-name: saludo;
         animation-duration: 3s;
         animation-delay: 2s;
         animation-fill-mode: both;
+        /* como este quiero que esté fijo y no se vaya luego, no le pongo el filter, pero aquí pongo both para que empiece con opacidad 0. */
     }
     
     @keyframes saludo {
@@ -266,7 +263,7 @@
         animation-name: click1;
         animation-duration: 5s;
         animation-fill-mode: forwards;
-        animation-delay: 20s;
+        animation-delay: 14s;
     }
     
     @keyframes click1 {
