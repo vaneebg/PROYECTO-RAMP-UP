@@ -340,3 +340,9 @@ figcaption {
 
 
 /* estilo para la leyenda de las fotos */
+
+@media screen and (max-width: 730px) {
+    .content-personal,
+    .content-gamer,
+    .content
+}
