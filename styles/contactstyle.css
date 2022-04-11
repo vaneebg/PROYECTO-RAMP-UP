@@ -1,7 +1,12 @@
+/* fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+/* ------------------------------- */
+
 
 /* body  */
 
@@ -15,6 +20,9 @@ body {
 }
 
 
+/* ----------------------- */
+
+
 /* flex models */
 
 header {
@@ -23,12 +31,18 @@ header {
     align-items: center;
 }
 
+
+/* botón atrás y div del logotipo */
+
 main {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
+
+
+/* formulario y las imagenes de los lados */
 
 .logotype {
     display: flex;
@@ -39,6 +53,12 @@ main {
     display: flex;
     justify-content: space-between;
 }
+
+
+/* botones de reset y enviar */
+
+
+/* --------------------------------------- */
 
 
 /* boton atras */
@@ -54,6 +74,9 @@ button img {
     height: 3em;
     width: 3em;
 }
+
+
+/* ------------------------ */
 
 
 /* estilo logo */
@@ -83,13 +106,16 @@ button img {
 }
 
 
+/* -------------------------------- */
+
+
 /* estilo titulo */
 
 h1 {
     text-align: center;
     font-family: 'Hanalei Fill', cursive;
     letter-spacing: 3px;
-    font-size: 5em;
+    font-size: 4.5em;
     font-weight: 900;
     letter-spacing: 0.1em;
     word-spacing: 0.2em;
@@ -98,15 +124,17 @@ h1 {
     background: linear-gradient(rgb(255, 136, 0), rgb(236, 200, 165));
     -webkit-background-clip: text;
     color: transparent;
-    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
     color: transparent;
-    -moz-background-clip: text;
     -moz-text-fill-color: transparent;
+    /* esto sirve para hacer transparente el color de la letra y entonces coger el background como color, así puedes degradar o poner fotos de fondo de letra */
     color: brown;
     margin: auto;
 }
+
+
+/* -------------------------- */
 
 
 /* estilo imagenes */
@@ -123,6 +151,9 @@ main img {
     width: 100%;
 }
 
+
+/* así ocupan el total y tienen el mismo tamaño, más agradable a la vista */
+
 input[type="email"] {
     width: 15em;
 }
@@ -136,6 +167,9 @@ span {
     justify-content: center;
     align-items: baseline;
 }
+
+
+/* para que lugar de procedencia aparezca centrado y la label en linea con el select */
 
 
 /* estilo form */
@@ -182,6 +216,9 @@ input[type="reset"] {
 input[type="submit"] {
     font-size: 1.3em;
 }
+
+
+/* más grande que reset para resaltar importancia del boton */
 
 
 /* estilos botones */
