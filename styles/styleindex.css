@@ -307,10 +307,15 @@
     }
     /* DISEÑO RESPONSIVE */
     
-    @media screen and (min-width:365px) and (max-width: 749px) {
+    @media screen and (max-width: 730px) {
+        h1 {
+            text-align: center;
+        }
         h2 {
-            font-size: 1em;
+            font-size: 2em;
             letter-spacing: 0.3em;
+            margin: 10px 0 0 10px;
+            /* para eliminar los espacios y que quede todo más compacto con los titulos */
         }
         .titles-2-3 {
             display: flex;
@@ -318,7 +323,7 @@
             align-items: center;
         }
         a {
-            font-size: 1.2em;
+            font-size: 1.6em;
         }
         button {
             width: 16em;
@@ -328,6 +333,7 @@
         .imageGroot {
             align-items: center;
             justify-content: space-around;
+            align-items: center;
         }
         /* para que se muestren al nivel de groot */
         .hello {
@@ -349,7 +355,3 @@
         }
         /* aqui lr porque busco invertir los dos bloques que tengo en ese div */
     }
-    
-    @media screen and (min-width:750px) and (max-width: 1024px) {}
-    
-    @media screen and (min-width:1024px) {}

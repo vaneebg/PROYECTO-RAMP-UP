@@ -346,3 +346,84 @@ figcaption {
 
 
 /* ---------------------- */
+
+
+/* media queries */
+
+@media screen and (min-width:365px) and (max-width: 749px) {
+    .content-personal,
+    .content-sport,
+    .content-gamer {
+        display: flex;
+        flex-direction: column;
+    }
+    /* imagenes animes */
+    .levi {
+        height: 3em;
+    }
+    .titan {
+        display: none;
+    }
+    .leviandando {
+        height: 2em;
+    }
+    .images-titan {
+        justify-content: space-around;
+    }
+    /* ----------------- */
+    .content-gamer,
+    .imag-content {
+        margin: 6px;
+    }
+    /* para que se separe un mínimo de los border del container */
+    .content-personal section {
+        width: 14em;
+    }
+    /* para que el texto, que lleva br se ajuste y no traspase la pantalla */
+    main button {
+        width: 10em;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    .header {
+        justify-content: center;
+    }
+    /* diseño logo */
+    .logoporta p {
+        font-size: 1em;
+    }
+    .logoporta {
+        width: 1.3em;
+        height: 1.3em;
+    }
+    .logotype {
+        justify-content: center;
+    }
+    .name p {
+        font-size: 1em;
+    }
+    /* boton atrás */
+    .back,
+    .back a {
+        all: unset;
+        width: 1em;
+        padding: 0;
+    }
+    .back img {
+        height: 1em;
+        width: 1em;
+        border-radius: 1em;
+    }
+    /* diseño de la imagen del botón para ir atrás */
+    .back a {
+        border: 2px dashed rgb(18, 92, 18);
+        padding: 10px;
+        border-radius: 50px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    }
+}
+
+@media screen and (min-width:750px) and (max-width: 1024px) {}
+
+@media screen and (min-width:1024px) {}
