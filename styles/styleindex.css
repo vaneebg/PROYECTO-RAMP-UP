@@ -332,8 +332,13 @@
         /* margin para que no se queden tan pegadas */
         .imageGroot {
             align-items: center;
-            justify-content: space-around;
-            align-items: center;
+            justify-content: center;
+            align-items: flex-start;
+            /* se pegan y se juntan a groot por arriba */
+        }
+        .imageGroot img {
+            height: 16em;
+            width: 11em;
         }
         /* para que se muestren al nivel de groot */
         .hello {
