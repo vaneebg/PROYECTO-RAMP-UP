@@ -47,6 +47,8 @@ El diseño elegido es bastante personal porque quería plasmar lo mejor que pudi
 ![foto](/assets/VISTAS%20PREVIAS/paleta.png)
 Para portfolio he optado por un diseño más elegante con una combinación de negros y blancos. Emulando un poco el tema del espacio exterior, he puesto cursores en sintonía con star Wars. 
 Contact vuelve a tener el mismo estilo que index para así tener una cierta continuidad a lo largo de toda la web en sí.
+Todo bajo el logo principal que sería como la firma profesional, tanto como favicon como logo en extremo alto de la pantalla.
+![foto](/assets/VISTAS%20PREVIAS/logo.png)
 El formato de letra utilizado ha procedido enteramente de Google Fonts.
 En el diseño he incidido en la función hover _(al poner el ratón sobre enlaces, links, botones,etc.)_ ya que en muchas web, sobre todo las personas más mayores tienen problemas para saber qué es "linkeable". Al añadirles formato soluciono esto ya que se aprecia visualmente la diferencia cuando posas en su espacio el cursor.
 
