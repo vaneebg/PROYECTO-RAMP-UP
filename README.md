@@ -22,7 +22,7 @@ _Este proyecto fue desarrollado con las siguientes tecnologias:_
 * CSS
 * Javascript
 
-###### Instalacion y despliegue ######
+#### Instalacion y despliegue ####
 Para desplegar este proyecto, lo primero que debes hacer es clonarte el repositorio que enlazo aquí:
 
 ```
@@ -30,7 +30,7 @@ https://github.com/vaneebg/PROYECTO-RAMP-UP
 ```
 Una vez entres en el link, debes dirigirte al _botón de Code_. Ahí encontrarás varias opciones como descargar en formato zip o la posibilidad de clonarte el repositorio copiando el enlace y poniendo en la consola de git : _git clone titulorepo1_
 ---
-##### Vista Previa #####
+#### Vista Previa ####
 * INDEX: 
 ![foto](/assets/VISTAS%20PREVIAS/index.jpg)
 * BIOGRAFÍA:
@@ -42,7 +42,7 @@ Una vez entres en el link, debes dirigirte al _botón de Code_. Ahí encontrará
 * CONTACT:
 ![foto](/assets/VISTAS%20PREVIAS/contact.jpg)
 ---
-###### Diseño ######
+#### Diseño ####
 El diseño elegido es bastante personal porque quería plasmar lo mejor que pudiese mi personalidad. Así, la página de Index tiene referencias a Marvel, tanto en el cursor personalizado como en la imagen de Groot. En cuanto a biografía, he escogido una paleta de colores a juego con el uniforme de Attack on Titan como guiño a mis profesores. Aquí un ejemplo de la paleta de análogos verdes:
 ![foto](/assets/VISTAS%20PREVIAS/paleta.png)
 Para portfolio he optado por un diseño más elegante con una combinación de negros y blancos. Emulando un poco el tema del espacio exterior, he puesto cursores en sintonía con star Wars. 
@@ -52,7 +52,7 @@ Todo bajo el logo principal que sería como la firma profesional, tanto como fav
 El formato de letra utilizado ha procedido enteramente de Google Fonts.
 En el diseño he incidido en la función hover _(al poner el ratón sobre enlaces, links, botones,etc.)_ ya que en muchas web, sobre todo las personas más mayores tienen problemas para saber qué es "linkeable". Al añadirles formato soluciono esto ya que se aprecia visualmente la diferencia cuando posas en su espacio el cursor.
 
-###### Diseño responsive ######
+#### Diseño responsive ####
 Cada sección de la página personal está adaptada al formato móvil. Algunos ejemplos:
 ![foto](/assets/VISTAS%20PREVIAS/responsiveindex.png)
 ![foto](/assets/VISTAS%20PREVIAS/biografiarespon.png)
