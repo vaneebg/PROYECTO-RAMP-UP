@@ -254,11 +254,15 @@ h1 {
 
 .data-academic {
     background: #369C55;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
-.data-personal {
-    background-color: #1E8F2D;
+
+/* con el de arriba se centra en el container, con text align se queda en cascada */
+
+.data-academic p {
+    text-align: center;
 }
 
 
@@ -278,9 +282,12 @@ h1 {
     width: 2em;
     border-radius: 100px;
     position: relative;
-    top: 10px;
-    right: 6px;
+    top: 0.6em;
+    right: 0.2em;
 }
+
+
+/* la imagen del boton se quedaba un poco arriba, esto para dejarla justo al borde */
 
 
 /* diseño de la imagen del botón para ir atrás */
@@ -289,7 +296,7 @@ h1 {
     border: 2px dashed rgb(18, 92, 18);
     padding: 10px;
     border-radius: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 
@@ -339,10 +346,6 @@ figcaption {
     font-weight: bold;
 }
 
-img {
-    margin: 6px;
-}
-
 
 /* estilo para la leyenda de las fotos */
 
@@ -365,7 +368,7 @@ img {
 
 @media screen and (max-width: 730px) {
     h1 {
-        font-size: 3em;
+        font-size: 2.8em;
     }
     .content-personal,
     .content-gamer,
@@ -376,4 +379,57 @@ img {
     img {
         margin: 16px;
     }
+    /* para que las imágenes queden más separadas*/
+    /* logotipo en pequeño  */
+    .logotype {
+        display: flex;
+        justify-content: center;
+        width: 5em;
+        height: 2em;
+    }
+    .logoporta {
+        background-color: green;
+        border: 1px solid white;
+        height: 1.5em;
+        width: 3em;
+    }
+    .logoporta p {
+        text-align: center;
+    }
+    .logoporta p,
+    .name p {
+        font-family: 'Fredericka the Great', cursive;
+        margin: 0;
+        font-size: 1em;
+        color: white;
+    }
+    /* imagenes anime */
+    .images-titan {
+        justify-content: center;
+    }
+    .titans {
+        display: none;
+    }
+    .levi {
+        height: 6em;
+        width: 9em;
+        border-radius: 30px;
+    }
+    .levigif {
+        display: none;
+    }
+    /* estilo boton atrás */
+    .back {
+        display: flex;
+        flex-direction: row;
+    }
+    .back,
+    .back a {
+        width: 7em;
+        text-align: center;
+    }
+    .back img {
+        display: none;
+    }
+    /* solo se verá el texto de Atrás */
 }
