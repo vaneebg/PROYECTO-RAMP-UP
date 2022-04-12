@@ -65,8 +65,13 @@ En el diseño he incidido en la función hover _(al poner el ratón sobre enlace
 #### Diseño responsive ####
 Cada sección de la página personal está adaptada al formato móvil. Algunos ejemplos:
 ![foto](/assets/VISTAS%20PREVIAS/responsiveindex.png)
+
 ![foto](/assets/VISTAS%20PREVIAS/biografiarespon.png)
 
+#### Aplicaciones posteriores ####
+Adaptar el diseño responsive con más detalle.
+Añadir más funcionalidad con javascript, por ejemplo los tipos de botones, más desplegables para una estructura más compacta.
+Usar Javascript para los diferentes títulos, añadiéndoles movimiento y animación.
 
 
 ## Autor ##
