@@ -113,6 +113,10 @@ main {
     justify-content: space-between;
 }
 
+.content-personal {
+    align-items: flex-end;
+}
+
 
 /* los tres formados por una seccion y una imagen */
 
@@ -164,8 +168,8 @@ h1 {
 /* estilo imagenes */
 
 .imgs-dib img {
-    height: 8em;
-    width: 6.7em;
+    height: 10em;
+    width: 8.7em;
     border-radius: 20px;
 }
 
@@ -175,7 +179,7 @@ h1 {
 }
 
 .content-personal img {
-    height: 7em;
+    height: 9em;
     width: 13em;
     border-radius: 50px;
 }
@@ -221,6 +225,7 @@ h1 {
 .content-gamer p {
     text-align: justify;
     padding: 5px;
+    font-size: 1.4em;
 }
 
 
@@ -348,6 +353,11 @@ figcaption {
     font-weight: bold;
 }
 
+.content-personal section,
+.data-academic {
+    font-size: 2em;
+}
+
 
 /* estilo para la leyenda de las fotos */
 
@@ -425,4 +435,23 @@ figcaption {
         display: none;
     }
     /* solo se verá el texto de Atrás */
+    main button {
+        font-size: 1em;
+    }
+    .content-personal,
+    .data-academic {
+        font-size: 0.4em;
+    }
+    .typeshobbies button {
+        font-size: 0.8em;
+    }
+    .imgs-dib img {
+        height: 5em;
+        width: 5em;
+    }
+    .content-gamer,
+    .content-sport,
+    .subsectionAnime {
+        font-size: 0.4em;
+    }
 }
