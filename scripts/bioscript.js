@@ -2,7 +2,7 @@
 let botones1 = document.getElementById("scroll1") || [];
 
 function visibility1() {
-    console.log("eee", botones1.style.display)
+
     if (botones1.style.display !== "flex") {
         botones1.style.display = "flex"
     } else {
