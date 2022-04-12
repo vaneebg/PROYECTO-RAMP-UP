@@ -382,26 +382,17 @@ figcaption {
     /* para que las imágenes queden más separadas*/
     /* logotipo en pequeño  */
     .logotype {
-        display: flex;
         justify-content: center;
         width: 5em;
         height: 2em;
     }
     .logoporta {
-        background-color: green;
-        border: 1px solid white;
         height: 1.5em;
         width: 3em;
     }
-    .logoporta p {
-        text-align: center;
-    }
     .logoporta p,
     .name p {
-        font-family: 'Fredericka the Great', cursive;
-        margin: 0;
         font-size: 1em;
-        color: white;
     }
     /* imagenes anime */
     .images-titan {

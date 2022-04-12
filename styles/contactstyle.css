@@ -233,3 +233,46 @@ input[type="reset"]:hover {
     cursor: url("/assets/images/contact/170512.png"), pointer;
     border: 2px dotted white;
 }
+
+
+/* -------------------------- */
+
+@media screen and (max-width: 730px) {
+    img {
+        display: none;
+    }
+    /* quitar las imagenes de fondo de los lados */
+    .back {
+        border-radius: 100px;
+        height: 4em;
+        width: 4em;
+    }
+    .back img {
+        width: 3em;
+        height: 3em;
+    }
+    .back img {
+        width: 2em;
+        height: 2em;
+    }
+    header {
+        justify-content: space-between;
+    }
+    /* logotipo */
+    .logotype {
+        justify-content: center;
+        width: 5em;
+        height: 2em;
+    }
+    .logoporta {
+        height: 1.5em;
+        width: 3em;
+    }
+    .logoporta p {
+        text-align: center;
+    }
+    .logoporta p,
+    .name p {
+        font-size: 1em;
+    }
+}

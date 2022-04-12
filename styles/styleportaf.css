@@ -1,341 +1,342 @@
-/* fonts */
-
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Wallpoet&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Devonshire&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Plaster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Maiden+Orange&display=swap');
-
-/* ------------------------- */
-
-
-/* body */
-
-body {
-    background: radial-gradient(black, rgb(32, 32, 32), rgb(22, 21, 21));
-    width: auto;
-    height: auto;
-    cursor: url("/assets/images/portfolio/cursor.png"), pointer;
-}
-
-
-/* ------------------------------- */
-
-
-/* flex boxes */
-
-body {
-    display: flex;
-}
-
-
-/* dos div, el contenido principal y la barra lateral */
-
-#body-princ {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-}
-
-
-/* dos div, header y main */
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    flex-basis: 33.33%;
-}
-
-
-/* tres div, boton atrás, logotipo y navegación */
-
-.logotype {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: space-between;
-}
-
-
-/* dos div, el logo del cuadrado y el texto de al lado */
-
-main {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-}
-
-
-/* 4 div, el titulo principal, presentación, la separación principal y los proyectos */
-
-.socialicons {
-    display: flex;
-    justify-content: center;
-}
-
-
-/* barra de social media */
-
-.nav-code,
-.nav-psico {
-    display: flex;
-    flex-direction: row;
-}
-
-
-/* los enlaces de nav formados por las imagenes */
-
-.emmet,
-.carta,
-.responsive {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    flex-basis: 33.30%;
-    margin: 6px;
-}
-
-
-/* flex basis que ocupen el mismo espacio independient del contenido*/
-
-.nav-psico {
-    display: flex;
-    justify-content: center;
-}
-
-.logoporta {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-}
-
-
-/* border box porque cuando das al link de la derecha y aparezca border, no se mueva */
-
-
-/* ------------------------ */
-
-
-/* estilo logo */
-
-.logotype {
-    width: 15em;
-    height: 2.7em;
-}
-
-.logoporta {
-    background-color: rgb(84, 20, 145);
-    border: 1px solid white;
-    height: 2.7em;
-    width: 3em;
-}
-
-.logoporta p {
-    text-align: center;
-}
-
-.logoporta p,
-.name p {
-    font-family: 'Fredericka the Great', cursive;
-    margin: 0;
-    font-size: 2em;
-    color: white;
-}
-
-
-/* margin 0 para que el texto ocupe solo la letra */
-
-
-/* --------------------------- */
-
-
-/* estilo boton atrás */
-
-.back img {
-    width: 3em;
-    height: 3em;
-    background-color: white;
-    border-radius: 100px;
-}
-
-.back {
-    all: unset;
-}
-
-
-/* --------------------------- */
-
-
-/* estilo nav header */
-
-.header-nav a {
-    all: unset;
-    box-sizing: border-box;
-    color: white;
-    padding: 2px;
-}
-
-.header-nav a:hover {
-    box-sizing: border-box;
-    color: black;
-    background-color: white;
-    border: 1px dashed black;
-}
-
-
-/* ------------------------------ */
-
-
-/* estilo de la separación */
-
-.separation {
-    background-image: url("/assets/images/portfolio/separationyoda.png");
-    background-repeat: repeat-x;
-    background-position: center;
-    background-size: 4em;
-    height: 5em;
-    width: auto;
-}
-
-
-/* ------------------------------------ */
-
-
-/* estilo boton lateral subir */
-
-.up {
-    all: unset;
-    position: sticky;
-    top: 30%;
-    margin: 2px;
-}
-
-.up a {
-    all: unset;
-    writing-mode: vertical-rl;
-    letter-spacing: 0.3em;
-    font-family: 'Rubik Glitch', cursive;
-    color: white;
-    font-size: 2.5em;
-    padding: 2px;
-}
-
-.up a:hover {
-    background-color: white;
-    border-radius: 50px;
-    color: black;
-}
-
-
-/* ----------------------- */
-
-
-/* estilo title */
-
-h1 {
-    font-family: 'Wallpoet', cursive;
-    color: white;
-    font-size: 3em;
-    text-shadow: 2px -5px black;
-    letter-spacing: 0.2em;
-}
-
-.socialicons a img {
-    width: 2em;
-    height: 2em;
-    padding: 8px;
-}
-
-
-/* tamaño de las imagenes link de social media */
-
-.circle {
-    border-radius: 100px;
-}
-
-
-/* algunas social media tenían fondo, pero al bordearlas a redondo se soluciona */
-
-
-/* ---------------------------- */
-
-
-/* estilo cuerpo */
-
-.presentation {
-    font-family: 'Devonshire', cursive;
-    color: white;
-    letter-spacing: 2px;
-    font-size: 1.5em;
-}
-
-.projects p {
-    font-family: 'Devonshire', cursive;
-    color: white;
-    letter-spacing: 2px;
-    font-weight: 100;
-}
-
-h3 {
-    font-family: 'Plaster', cursive;
-    color: white;
-    font-size: xx-large;
-    text-shadow: 2px -4px black;
-}
-
-
-/* ------------------------------------ */
-
-
-/* estilo contenidos */
-
-figure {
-    text-align: center;
-}
-
-
-/* las leyendas de las fotos centradas */
-
-.nav-psico img {
-    height: 10em;
-    width: 7.5em;
-    border: 2px solid black;
-}
-
-.nav-psico a {
-    all: unset;
-    font-family: 'Maiden Orange', cursive;
-    color: white;
-}
-
-.nav-psico a:hover {
-    background-color: white;
-    color: black;
-}
-
-.link img {
-    height: 9em;
-    width: 13em;
-}
-
-
-/* para las imágenes dentro de la sección código */
-
-.content p {
-    text-align: center;
-}
-
-.link img:hover {
-    box-sizing: border-box;
-    border: 2px solid white;
-}
-
-button:hover,
-a:hover {
-    cursor: url("/assets/images/portfolio/cursor2.png"), pointer;
-}
+        /* fonts */
+        
+        @import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Wallpoet&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Devonshire&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Plaster&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Maiden+Orange&display=swap');
+        /* ------------------------- */
+        /* body */
+        
+        body {
+            background: radial-gradient(black, rgb(32, 32, 32), rgb(22, 21, 21));
+            width: auto;
+            height: auto;
+            cursor: url("/assets/images/portfolio/cursor.png"), pointer;
+        }
+        /* ------------------------------- */
+        /* flex boxes */
+        
+        body {
+            display: flex;
+        }
+        /* dos div, el contenido principal y la barra lateral */
+        
+        #body-princ {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+        /* dos div, header y main */
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+        /* tres div, boton atrás, logotipo y navegación */
+        
+        .logotype {
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            justify-content: space-between;
+        }
+        /* dos div, el logo del cuadrado y el texto de al lado */
+        
+        main {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+        /* 4 div, el titulo principal, presentación, la separación principal y los proyectos */
+        
+        .socialicons {
+            display: flex;
+            justify-content: center;
+        }
+        /* barra de social media */
+        
+        .nav-code,
+        .nav-psico {
+            display: flex;
+            flex-direction: row;
+        }
+        /* los enlaces de nav formados por las imagenes */
+        
+        .emmet,
+        .carta,
+        .responsive {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            flex-basis: 33.30%;
+            margin: 6px;
+        }
+        /* flex basis que ocupen el mismo espacio independient del contenido*/
+        
+        .nav-psico {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .logoporta {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+        }
+        /* border box porque cuando das al link de la derecha y aparezca border, no se mueva */
+        /* ------------------------ */
+        /* estilo logo */
+        
+        .logotype {
+            width: 15em;
+            height: 2.7em;
+        }
+        
+        .logoporta {
+            background-color: rgb(84, 20, 145);
+            border: 1px solid white;
+            height: 2.7em;
+            width: 3em;
+        }
+        
+        .logoporta p {
+            text-align: center;
+        }
+        
+        .logoporta p,
+        .name p {
+            font-family: 'Fredericka the Great', cursive;
+            margin: 0;
+            font-size: 2em;
+            color: white;
+        }
+        /* margin 0 para que el texto ocupe solo la letra */
+        /* --------------------------- */
+        /* estilo boton atrás */
+        
+        .back img {
+            width: 3em;
+            height: 3em;
+            background-color: white;
+            border-radius: 100px;
+        }
+        
+        .back {
+            all: unset;
+        }
+        /* --------------------------- */
+        /* estilo nav header */
+        
+        .header-nav a {
+            all: unset;
+            box-sizing: border-box;
+            color: white;
+            padding: 2px;
+        }
+        
+        .header-nav a:hover {
+            box-sizing: border-box;
+            color: black;
+            background-color: white;
+            border: 1px dashed black;
+        }
+        /* ------------------------------ */
+        /* estilo de la separación */
+        
+        .separation {
+            background-image: url("/assets/images/portfolio/separationyoda.png");
+            background-repeat: repeat-x;
+            background-position: center;
+            background-size: 4em;
+            height: 5em;
+            width: auto;
+        }
+        /* ------------------------------------ */
+        /* estilo boton lateral subir */
+        
+        .up {
+            all: unset;
+            position: sticky;
+            top: 30%;
+            margin: 2px;
+        }
+        
+        .up a {
+            all: unset;
+            writing-mode: vertical-rl;
+            letter-spacing: 0.3em;
+            font-family: 'Rubik Glitch', cursive;
+            color: white;
+            font-size: 2.5em;
+            padding: 2px;
+        }
+        
+        .up a:hover {
+            background-color: white;
+            border-radius: 50px;
+            color: black;
+        }
+        /* ----------------------- */
+        /* estilo title */
+        
+        h1 {
+            font-family: 'Wallpoet', cursive;
+            color: white;
+            font-size: 3em;
+            text-shadow: 2px -5px black;
+            letter-spacing: 0.2em;
+        }
+        
+        .socialicons a img {
+            width: 2em;
+            height: 2em;
+            padding: 8px;
+        }
+        /* tamaño de las imagenes link de social media */
+        
+        .circle {
+            border-radius: 100px;
+        }
+        /* algunas social media tenían fondo, pero al bordearlas a redondo se soluciona */
+        /* ---------------------------- */
+        /* estilo cuerpo */
+        
+        .presentation {
+            font-family: 'Devonshire', cursive;
+            color: white;
+            letter-spacing: 2px;
+            font-size: 1.5em;
+        }
+        
+        .projects p {
+            font-family: 'Devonshire', cursive;
+            color: white;
+            letter-spacing: 2px;
+            font-weight: 100;
+        }
+        
+        h3 {
+            font-family: 'Plaster', cursive;
+            color: white;
+            font-size: xx-large;
+            text-shadow: 2px -4px black;
+        }
+        /* ------------------------------------ */
+        /* estilo contenidos */
+        
+        figure {
+            text-align: center;
+        }
+        /* las leyendas de las fotos centradas */
+        
+        .nav-psico img {
+            height: 10em;
+            width: 7.5em;
+            border: 2px solid black;
+        }
+        
+        .nav-psico a {
+            all: unset;
+            font-family: 'Maiden Orange', cursive;
+            color: white;
+        }
+        
+        .nav-psico a:hover {
+            background-color: white;
+            color: black;
+        }
+        
+        .link img {
+            height: 9em;
+            width: 13em;
+        }
+        /* para las imágenes dentro de la sección código */
+        
+        .content p {
+            text-align: center;
+        }
+        
+        .link img:hover {
+            box-sizing: border-box;
+            border: 2px solid white;
+        }
+        
+        button:hover,
+        a:hover {
+            cursor: url("/assets/images/portfolio/cursor2.png"), pointer;
+        }
+        /* media queries */
+        
+        @media screen and (max-width: 730px) {
+            /* logotipo */
+            .logotype {
+                justify-content: center;
+                width: 5em;
+                height: 2em;
+            }
+            .logoporta {
+                height: 1.5em;
+                width: 3em;
+            }
+            .logoporta p {
+                text-align: center;
+            }
+            .logoporta p,
+            .name p {
+                font-size: 1em;
+            }
+            .header-nav {
+                display: none;
+            }
+            /* titulo principal */
+            h1 {
+                font-size: 1.2em;
+            }
+            h3 {
+                font-size: 1em;
+            }
+            /* barra de social media */
+            .socialicons a img {
+                width: 1em;
+                height: 1em;
+                padding: 8px;
+            }
+            .socialicons {
+                justify-content: flex-start;
+            }
+            /* icono atrás */
+            .back {
+                border-radius: 100px;
+                height: 4em;
+                width: 4em;
+            }
+            .back img {
+                width: 3em;
+                height: 3em;
+            }
+            .back img {
+                width: 2em;
+                height: 2em;
+            }
+            header {
+                justify-content: flex-start;
+            }
+            /* presentación */
+            .presentation {
+                display: none;
+            }
+            /* contenido psicologia y code cambiar orientación */
+            .content p {
+                text-align: left;
+            }
+            .nav-psico,
+            .nav-code {
+                flex-direction: column;
+            }
+        }
