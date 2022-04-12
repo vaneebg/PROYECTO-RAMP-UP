@@ -1,6 +1,6 @@
 
 
-# PROYECTO TU PÁGINA PERSONAL
+# PROYECTO TU PÁGINA PERSONAL #
 Proyecto fin de RAMP-UP en el bootcamp de FullStack Developer de The Brigde. 
 ---
 
@@ -61,4 +61,4 @@ Cada sección de la página personal está adaptada al formato móvil. Algunos e
 
 ## Autor
 Este proyecto fue desarrollado por [Vanesa Beltrán Guillén](https://github.com/vaneebg)
-![foto] La dura vida del programador... :P
+![foto](/assets/VISTAS%20PREVIAS/meme.jpg) La dura vida del programador... :P
